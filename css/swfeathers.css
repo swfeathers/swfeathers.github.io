@@ -1,18 +1,35 @@
+
 body {
-	position:relative;
+	position: relative;
 }
 
 html, body {
 	width: 100%;
-    height: 100%;
+	height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	text-transform: uppercase;
 }
 
+.nav-link.active {
+	color: #cb8f0d;
+}
+
+.navbar-fixed-top {
+	border-bottom: 1px solid transparent;	
+}
+
+@media (max-width: 47.9em) {
+
 .navbar {
-	text-transform:uppercase;
+	background-color: #eceeef;
+	border-bottom: 1px solid #b5b5b7;
+}
+
+.navbar-nav .nav-item+.nav-item {
+	margin-left: 0;
+}
 }
 
 .header, .footer {
@@ -20,27 +37,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	width: 100%;
 	height: 100%;
 	/*background-image: url('http://www.beingbrunel.com/wp-content/uploads/2014/12/london-skyline.jpg');*/
-	background: 
-    linear-gradient(rgba(232, 237, 243, 0.75), rgba(232, 237, 243, 0.75)), url('http://www.beingbrunel.com/wp-content/uploads/2014/12/london-skyline.jpg');
+	background: linear-gradient(rgba(232, 237, 243, 0.75), rgba(232, 237, 243, 0.75)), url('http://www.beingbrunel.com/wp-content/uploads/2014/12/london-skyline.jpg');
 	background-repeat: no-repeat;
 	background-attachment: scroll;
-	background-position:center center;
+	background-position: center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
-}
-
-section {
-	border-bottom: 1px solid #cccccc;
-}
-
-section:nth-child(even) {
-    background-color: transparent;
-}
-
-section:nth-child(odd) {
-    background-color: transparent;
 }
 
 .text-vertical-center {
@@ -48,17 +52,49 @@ section:nth-child(odd) {
 	vertical-align: middle;
 }
 
-#thumbs img {
-	border: 1px solid #ddd;
+.videoThumbWrapper {
+	position: relative;
 }
 
-@media (max-width: 47.9em) {
-	.navbar {
-	}
-	.navbar-brand {
-		float: none;
-	}
-	.navbar-nav .nav-item+.nav-item {
-		margin-left: 0;
-	}
+.videoThumbWrapper button.btn {
+	position: absolute;
+	top:38%;
+	left:42%;
+}
+
+.juicer-feed h1.referral {
+	display: none;
+}
+
+.juicer-feed.slider li.feed-item.feed-item.juicer {
+	display: none;
+}
+
+.juicer-feed.slider li.feed-item[data-id="31531971"] {
+	display: none;
+}
+
+.modal-title {
+	line-height:1.1;
+	margin-bottom: .5rem;
+}
+
+.modal-credit {
+	margin-bottom: 0;
+}
+
+section {
+	border-bottom: 1rem solid #ccc;
+}
+
+section:nth-child(even) {
+	background-color: transparent;
+}
+
+section:nth-child(odd) {
+	background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/brillant.png");
+}
+
+#covers img {
+	border: 1px solid #ddd;
 }
