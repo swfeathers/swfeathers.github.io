@@ -64,11 +64,6 @@ h5, .h5 {
 }
 }
 
-@media (min-width: 62em) {
-
-
-}
-
 .text-vertical-center {
 	display: table-cell;
 	vertical-align: middle;

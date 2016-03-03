@@ -52,6 +52,16 @@ section
     border: 1px solid #e1e3e5;
 }
 
+.figure-caption
+{
+    color: #021432 !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd)
+{
+    background-color: #f7f7f8 !important;
+}
+
 /*! normalize.css commit fe56763 | MIT License | github.com/necolas/normalize.css */
 html
 {
@@ -6709,7 +6719,7 @@ button.close
     position: relative;
 
     width: auto;
-    margin: 10px;
+    margin: 1rem;
 }
 
 .modal-content
@@ -6718,7 +6728,7 @@ button.close
 
     border: 1px solid rgba(0, 0, 0, .2);
     outline: 0;
-    background-color: #fff;
+    background-color: #fdfeff;
     -webkit-background-clip: padding-box;
             background-clip: padding-box;
 }
@@ -6747,7 +6757,7 @@ button.close
 
 .modal-header
 {
-    padding: 15px;
+    padding: 1rem;
 
     border-bottom: 1px solid #e5e5e5;
 }
@@ -6776,12 +6786,12 @@ button.close
 {
     position: relative;
 
-    padding: 15px;
+    padding: 1rem;
 }
 
 .modal-footer
 {
-    padding: 15px;
+    padding: 1rem;
 
     text-align: right;
 
@@ -6812,7 +6822,7 @@ button.close
     .modal-dialog
     {
         max-width: 600px;
-        margin: 30px auto;
+        margin: 2rem auto;
     }
     .modal-sm
     {
@@ -7738,39 +7748,39 @@ a.bg-danger:hover
 
 .m-a-2
 {
-    margin: 1.5rem 1.5rem !important;
+    margin: 2rem 2rem !important;
 }
 
 .m-t-2
 {
-    margin-top: 1.5rem !important;
+    margin-top: 2rem !important;
 }
 
 .m-r-2
 {
-    margin-right: 1.5rem !important;
+    margin-right: 2rem !important;
 }
 
 .m-b-2
 {
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 2rem !important;
 }
 
 .m-l-2
 {
-    margin-left: 1.5rem !important;
+    margin-left: 2rem !important;
 }
 
 .m-x-2
 {
-    margin-right: 1.5rem !important;
-    margin-left: 1.5rem !important;
+    margin-right: 2rem !important;
+    margin-left: 2rem !important;
 }
 
 .m-y-2
 {
-    margin-top: 1.5rem !important;
-    margin-bottom: 1.5rem !important;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
 }
 
 .m-a-3
@@ -7886,39 +7896,39 @@ a.bg-danger:hover
 
 .p-a-2
 {
-    padding: 1.5rem 1.5rem !important;
+    padding: 2rem 2rem !important;
 }
 
 .p-t-2
 {
-    padding-top: 1.5rem !important;
+    padding-top: 2rem !important;
 }
 
 .p-r-2
 {
-    padding-right: 1.5rem !important;
+    padding-right: 2rem !important;
 }
 
 .p-b-2
 {
-    padding-bottom: 1.5rem !important;
+    padding-bottom: 2rem !important;
 }
 
 .p-l-2
 {
-    padding-left: 1.5rem !important;
+    padding-left: 2rem !important;
 }
 
 .p-x-2
 {
-    padding-right: 1.5rem !important;
-    padding-left: 1.5rem !important;
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
 }
 
 .p-y-2
 {
-    padding-top: 1.5rem !important;
-    padding-bottom: 1.5rem !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
 }
 
 .p-a-3
