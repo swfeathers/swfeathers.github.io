@@ -39,6 +39,7 @@ h5, .h5 {
 }
 
 @media (min-width: 34em) {
+
 .display-1 {
 	font-size: 2.618rem;
 	letter-spacing: 0.25rem;
@@ -60,7 +61,6 @@ h5, .h5 {
 .display-2 {
 	font-size: 2.618rem;
 	letter-spacing: 0.5rem;
-	
 }
 }
 
@@ -107,3 +107,18 @@ h5, .h5 {
 section:last-of-type {
 	border-bottom: none;
 }
+
+/*.navbar-fixed-top.top-nav-shrink {
+	background-color: transparent;	
+}
+
+.navbar {
+	background: rgba(181,185,186,1);
+	background: -moz-linear-gradient(left, rgba(181,185,186,0.95) 0%, rgba(223,226,228,0.95) 50%, rgba(253,252,252,0.95) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(181,185,186,0.95)), color-stop(50%, rgba(223,226,228,0.98)), color-stop(100%, rgba(253,252,252,0.95)));
+	background: -webkit-linear-gradient(left, rgba(181,185,186,0.95) 0%, rgba(223,226,228,0.95) 50%, rgba(253,252,252,0.95) 100%);
+	background: -o-linear-gradient(left, rgba(181,185,186,0.95) 0%, rgba(223,226,228,0.95) 50%, rgba(253,252,252,0.95) 100%);
+	background: -ms-linear-gradient(left, rgba(181,185,186,0.95) 0%, rgba(223,226,228,0.95) 50%, rgba(253,252,252,0.95) 100%);
+	background: linear-gradient(to right, rgba(181,185,186,0.95) 0%, rgba(223,226,228,0.95) 50%, rgba(253,252,252,0.95) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5b9ba', endColorstr='#fdfcfc', GradientType=1 );
+}*/

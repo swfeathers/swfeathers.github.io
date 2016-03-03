@@ -16,7 +16,7 @@
 .navbar-fixed-top.top-nav-shrink
 {
     border-bottom: 1px solid #021432;
-    background-color: #e1e3e5;
+    background-color: #e8eaed;
 }
 
 .navbar.navbar-dark .navbar-brand
@@ -34,7 +34,7 @@
     .navbar
     {
         border-bottom: 1px solid #021432;
-        background-color: #e1e3e5;
+        background-color: #e8eaed;
     }
     .navbar-nav .nav-item + .nav-item
     {
@@ -44,12 +44,12 @@
 
 section
 {
-    border-bottom: 1rem solid #e1e3e5;
+    border-bottom: 1rem solid #e8eaed;
 }
 
 #covers img
 {
-    border: 1px solid #e1e3e5;
+    border: 1px solid #e8eaed;
 }
 
 .figure-caption
@@ -59,7 +59,7 @@ section
 
 .table-striped tbody tr:nth-of-type(odd)
 {
-    background-color: #f7f7f8 !important;
+    background-color: #f6f7f8 !important;
 }
 
 /*! normalize.css commit fe56763 | MIT License | github.com/necolas/normalize.css */
@@ -760,7 +760,7 @@ hr
     margin-bottom: 1rem;
 
     border: 0;
-    border-top: 1px solid #e1e3e5;
+    border-top: 1px solid #e8eaed;
 }
 
 small,
@@ -816,7 +816,7 @@ mark,
     margin-bottom: 1rem;
     padding: .5rem 1rem;
 
-    border-left: .25rem solid #e1e3e5;
+    border-left: .25rem solid #e8eaed;
 }
 
 .blockquote-footer
@@ -840,7 +840,7 @@ mark,
 
     text-align: right;
 
-    border-right: .25rem solid #e1e3e5;
+    border-right: .25rem solid #e8eaed;
     border-left: 0;
 }
 
@@ -2549,19 +2549,19 @@ pre code
 
     vertical-align: top;
 
-    border-top: 1px solid #e1e3e5;
+    border-top: 1px solid #e8eaed;
 }
 
 .table thead th
 {
     vertical-align: bottom;
 
-    border-bottom: 2px solid #e1e3e5;
+    border-bottom: 2px solid #e8eaed;
 }
 
 .table tbody + tbody
 {
-    border-top: 2px solid #e1e3e5;
+    border-top: 2px solid #e8eaed;
 }
 
 .table .table
@@ -2577,13 +2577,13 @@ pre code
 
 .table-bordered
 {
-    border: 1px solid #e1e3e5;
+    border: 1px solid #e8eaed;
 }
 
 .table-bordered th,
 .table-bordered td
 {
-    border: 1px solid #e1e3e5;
+    border: 1px solid #e8eaed;
 }
 
 .table-bordered thead th,
@@ -2710,12 +2710,12 @@ pre code
 .thead-default th
 {
     color: #0b3e96;
-    background-color: #e1e3e5;
+    background-color: #e8eaed;
 }
 
 .table-inverse
 {
-    color: #e1e3e5;
+    color: #e8eaed;
     background-color: #021432;
 }
 
@@ -2746,14 +2746,14 @@ pre code
 .table-reflow th,
 .table-reflow td
 {
-    border-top: 1px solid #e1e3e5;
-    border-left: 1px solid #e1e3e5;
+    border-top: 1px solid #e8eaed;
+    border-left: 1px solid #e8eaed;
 }
 
 .table-reflow th:last-child,
 .table-reflow td:last-child
 {
-    border-right: 1px solid #e1e3e5;
+    border-right: 1px solid #e8eaed;
 }
 
 .table-reflow thead:last-child tr:last-child th,
@@ -2763,7 +2763,7 @@ pre code
 .table-reflow tfoot:last-child tr:last-child th,
 .table-reflow tfoot:last-child tr:last-child td
 {
-    border-bottom: 1px solid #e1e3e5;
+    border-bottom: 1px solid #e8eaed;
 }
 
 .table-reflow tr
@@ -2776,7 +2776,7 @@ pre code
 {
     display: block !important;
 
-    border: 1px solid #e1e3e5;
+    border: 1px solid #e8eaed;
 }
 
 .form-control
@@ -2837,7 +2837,7 @@ pre code
 .form-control[readonly]
 {
     opacity: 1;
-    background-color: #e1e3e5;
+    background-color: #e8eaed;
 }
 
 .form-control:disabled
@@ -4601,7 +4601,7 @@ input[type='button'].btn-block
 
     color: #0b3e96;
     border: 1px solid rgba(0, 0, 0, .15);
-    background-color: #e1e3e5;
+    background-color: #e8eaed;
 }
 
 .input-group-addon.form-control-sm,
@@ -5006,7 +5006,7 @@ input[type='button'].btn-block
 .nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover
 {
-    border-color: #e1e3e5 #e1e3e5 #ddd;
+    border-color: #e8eaed #e8eaed #ddd;
 }
 
 .nav-tabs .nav-link.disabled,
@@ -5625,7 +5625,7 @@ input[type='button'].btn-block
 
     list-style: none;
 
-    background-color: #e1e3e5;
+    background-color: #e8eaed;
 }
 
 .breadcrumb::after
@@ -5733,7 +5733,7 @@ input[type='button'].btn-block
 {
     color: #0b3e96;
     border-color: #ddd;
-    background-color: #e1e3e5;
+    background-color: #e8eaed;
 }
 
 .pagination-lg .page-link
@@ -5864,7 +5864,7 @@ a.tag:hover
     margin-bottom: 2rem;
     padding: 2rem 1rem;
 
-    background-color: #e1e3e5;
+    background-color: #e8eaed;
 }
 
 @media (min-width: 544px)
@@ -5877,7 +5877,7 @@ a.tag:hover
 
 .jumbotron-hr
 {
-    border-top-color: #c6cacd;
+    border-top-color: #cbd0d7;
 }
 
 .jumbotron-fluid
@@ -6335,7 +6335,7 @@ base::-moz-progress-bar,
     cursor: not-allowed;
 
     color: #789fe2;
-    background-color: #e1e3e5;
+    background-color: #e8eaed;
 }
 
 .list-group-item.disabled .list-group-item-heading,
@@ -7482,7 +7482,7 @@ button.close
 
 .bg-inverse
 {
-    color: #e1e3e5;
+    color: #e8eaed;
     background-color: #021432;
 }
 

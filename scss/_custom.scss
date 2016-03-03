@@ -10,7 +10,7 @@
 $gray-dark:                 #021432;
 $gray:                   	#0b3e96;
 $gray-light:                #789fe2;
-$gray-lighter:              #e1e3e5;
+$gray-lighter:              #e8eaed;
 $gray-lightest:             #fdfeff;
 
 $brand-primary:             #336ccc;
@@ -218,5 +218,5 @@ section {
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-	background-color: lighten($gray-lighter, 8%)!important;
+	background-color: lighten($gray-lighter, 5%)!important;
 }
