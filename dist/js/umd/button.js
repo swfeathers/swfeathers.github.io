@@ -33,7 +33,7 @@
      */
 
     var NAME = 'button';
-    var VERSION = '4.0.0-alpha.2';
+    var VERSION = '4.0.0-alpha';
     var DATA_KEY = 'bs.button';
     var EVENT_KEY = '.' + DATA_KEY;
     var DATA_API_KEY = '.data-api';
@@ -108,8 +108,6 @@
                 input.checked = !$(this._element).hasClass(ClassName.ACTIVE);
                 $(this._element).trigger('change');
               }
-
-              input.focus();
             }
           } else {
             this._element.setAttribute('aria-pressed', !$(this._element).hasClass(ClassName.ACTIVE));

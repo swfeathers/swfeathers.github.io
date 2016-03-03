@@ -47,7 +47,7 @@
      */
 
     var NAME = 'tooltip';
-    var VERSION = '4.0.0-alpha.2';
+    var VERSION = '4.0.0-alpha';
     var DATA_KEY = 'bs.tooltip';
     var EVENT_KEY = '.' + DATA_KEY;
     var JQUERY_NO_CONFLICT = $.fn[NAME];

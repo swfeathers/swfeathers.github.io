@@ -37,7 +37,7 @@
      */
 
     var NAME = 'dropdown';
-    var VERSION = '4.0.0-alpha.2';
+    var VERSION = '4.0.0-alpha';
     var DATA_KEY = 'bs.dropdown';
     var EVENT_KEY = '.' + DATA_KEY;
     var DATA_API_KEY = '.data-api';
@@ -272,7 +272,7 @@
             index++;
           }
 
-          if (index < 0) {
+          if (! ~index) {
             index = 0;
           }
 
