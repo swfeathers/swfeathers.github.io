@@ -96,8 +96,9 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-12 col-sm-4 col-xl-3 offset-xl-1 p-b-1"> <img class="img-fluid img-thumbnail" src="img/sam_featherstone-audio_engineer-music_producer.jpg" alt="Music Producer / Mix Engineer || Sam 'Feathers' Featherstone"> </div>
-			<div class="col-xs-12 col-sm-8 col-xl-7 text-justify">
+			<div class="col-xs-12 col-sm-4 col-xl-3 offset-xl-1 p-b-1 hidden-sm-down"> <img class="img-fluid img-thumbnail" src="img/sam_featherstone-audio_engineer-music_producer.jpg" alt="Sam Featherstone || Music Producer / Mix Engineer || 'Feathers'"> </div>
+			<div class="col-xs-12 col-md-8 col-xl-7 text-justify">
+				<img class="img-thumbnail pull-xs-left m-r-1 hidden-md-up" src="img/sam_featherstone-audio_engineer-music_producer.jpg" alt="Sam Featherstone || Music Producer / Mix Engineer || 'Feathers'" style="width:40%">
 				<p>I'm based Battersea in South London and I produce music. Rock and pop is what I love the most, but I get excited by all good music no matter the genre.</p>
 				<p>My work in the music world started when I played guitar in UK rock band <a href="http://www.meandthemountain.co.uk" target="_blank">Me and the Mountain</a>. In the band I recorded, produced and mixed all the music as well as playing guitar on the tracks (I even drummed on our first EP!), but don't let me near a vocal mic &mdash; no-one wants to hear that.</p>
 				<p> I loved being in the studio crafting recordings so I gradually migrated over to that world. Having managed the recording studio at <a href="http://www.pricestudios.co.uk" target="_blank">Price Studios</a> for 2&frac12; years, I'm now back freelancing and looking to set up a studio of my own.</p>
@@ -457,8 +458,8 @@
 	$(function() {
 		$('a.page-scroll').bind('click', function(event) {
 			var $anchor = $(this);
-			if ($anchor.attr('href') == '#contact'){var $offset = 0}
-				else {var $offset = 53};
+			if ($anchor.attr('href') == '#contact'){var $offset = -1}
+				else {var $offset = 56};
 			$('html, body').stop().animate({
 				scrollTop: $($anchor.attr('href')).offset().top-$offset
 				}, 1250, 'easeInOutExpo');
