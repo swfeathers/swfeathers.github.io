@@ -1,1 +1,1 @@
-Disallow: /sample-directory/
+Disallow: /cortex/
