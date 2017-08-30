@@ -491,20 +491,20 @@
 
 <script>
 	// Script for menu highlight
-	$('body').scrollspy({ target: '.navbar-fixed-top', offset: 200 })
+	$('body').scrollspy({ target: '.fixed-top', offset: 200 })
 
 	// jQuery to shrink the navbar on scroll
-	function shrinkNavbar() {
-	if ($(".navbar").offset().top > 5 &&
-		$(window).scrollTop() + $(window).height() + 1 < $(document).height()) {
-	$(".navbar-fixed-top").addClass("top-nav-shrink");
-	} else {
-	$(".navbar-fixed-top").removeClass("top-nav-shrink");
-	}
-	}
+	//function shrinkNavbar() {
+	//if ($(".navbar").offset().top > 5 &&
+	//	$(window).scrollTop() + $(window).height() + 1 < $(document).height()) {
+	//$(".fixed-top").addClass("top-nav-shrink");
+	//} else {
+	//$(".fixed-top").removeClass("top-nav-shrink");
+	//}
+	//}
 
-	$(window).scroll(shrinkNavbar);
-	$(document).ready(shrinkNavbar);
+	//$(window).scroll(shrinkNavbar);
+	//$(document).ready(shrinkNavbar);
 
 	// jQuery for page scrolling feature - requires jQuery Easing plugin
 	$(function() {
