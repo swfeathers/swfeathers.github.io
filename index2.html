@@ -63,17 +63,27 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar-fixed-top">
-<nav class="navbar navbar-dark navbar-fixed-top text-uppercase">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark text-uppercase">
 	<div class="container">
-		<div class="navbar-header text-xs-right"> <a class="navbar-brand page-scroll" href="#top" onclick="ga('send', 'event', 'Menu_Link', 'click', 'Feathers');">Feathers</a>
-			<button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target=".navbar-toggleable-sm"><i class="fa fa-bars"></i></button>
-		</div>
-		<div class="collapse navbar-toggleable-sm">
-			<ul class="nav navbar-nav pull-xs-none pull-md-right clearfix">
-				<li class="nav-item pull-xs-none pull-md-left"> <a class="nav-link page-scroll" href="#about" onclick="ga('send', 'event', 'Menu_Link', 'click', 'About');">About</a> </li>
-				<li class="nav-item pull-xs-none pull-md-left"> <a class="nav-link page-scroll" href="#music" onclick="ga('send', 'event', 'Menu_Link', 'click', 'Music');">Music</a> </li>
-				<li class="nav-item pull-xs-none pull-md-left"> <a class="nav-link page-scroll" href="#discography" onclick="ga('send', 'event', 'Menu_Link', 'click', 'Discography');">Discography</a> </li>
-				<li class="nav-item pull-xs-none pull-md-left"> <a class="nav-link page-scroll" href="#contact" onclick="ga('send', 'event', 'Menu_Link', 'click', 'Contact');">Contact</a> </li>
+		<a class="navbar-brand page-scroll" href="#top" onclick="ga('send', 'event', 'Menu_Link', 'click', 'Feathers');">Feathers</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link page-scroll" href="#about" onclick="ga('send', 'event', 'Menu_Link', 'click', 'About');">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link page-scroll" href="#music" onclick="ga('send', 'event', 'Menu_Link', 'click', 'Music');">Music</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link page-scroll" href="#discography" onclick="ga('send', 'event', 'Menu_Link', 'click', 'Discography');">Discography</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link page-scroll" href="#contact" onclick="ga('send', 'event', 'Menu_Link', 'click', 'Contact');">Contact</a>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -89,7 +99,7 @@
 			</div>
 		</div>
 	</div>
-	<a href="#about" class="btn btn-primary btn-lg page-scroll" role="button" onclick="ga('send', 'event', 'Menu_Link', 'click', 'Scroll'"> <i class="fa fa-angle-double-down fa-lg"></i> </a> </header>
+	<a href="#about" class="btn btn-primary btn-lg page-scroll" role="button" onclick="ga('send', 'event', 'Menu_Link', 'click', 'Scroll');"> <i class="fa fa-angle-double-down fa-lg"></i> </a> </header>
 <section id="about" class="p-t-3 p-b-2">
 	<div class="container">
 		<div class="row">
@@ -510,9 +520,9 @@
 	});
 	
 	// Closes the Responsive Menu on Menu Item Click
-    $('.navbar-toggleable-sm ul li a').click(function() {
-        $('.navbar-toggler:visible').click();
-    });
+    //$('.navbar-toggleable-sm ul li a').click(function() {
+    //    $('.navbar-toggler:visible').click();
+    //});
 
 	// YouTube Modal
     $('#videoModal').on('show.bs.modal', function (event) {
