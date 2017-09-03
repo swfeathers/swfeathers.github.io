@@ -16,6 +16,10 @@ h5, .h5 {
 	font-weight: 400;
 }
 
+.display-1, .display-2 {
+	transition: font-size, 0.5s, letter-spacing, 0.5s;	
+}
+
 .navbar {
 	padding: 9px 1rem;
 }
@@ -57,8 +61,4 @@ h5, .h5 {
 
 .juicer-feed.slider li.feed-item[data-id="31531971"] {
 	display: none;
-}
-
-section:last-of-type {
-	border-bottom: none;
 }
