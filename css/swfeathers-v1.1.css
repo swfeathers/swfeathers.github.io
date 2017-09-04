@@ -20,10 +20,6 @@ h5, .h5 {
 	transition: font-size, 0.5s, letter-spacing, 0.5s;	
 }
 
-.navbar {
-	padding: 9px 1rem;
-}
-
 .nav-link {
 	transition: color 0.5s;
 }
