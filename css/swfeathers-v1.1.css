@@ -62,3 +62,9 @@ h5, .h5 {
 .juicer-feed.slider li.feed-item[data-id="31531971"] {
 	display: none;
 }
+
+@media (min-aspect-ratio: 9/5) { 
+	.header, .footer {
+		background-position: center -85px;
+	}
+}
