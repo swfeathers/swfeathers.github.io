@@ -48,6 +48,8 @@ h5, .h5 {
 .header .btn {
 	position: absolute;
 	bottom: 2rem;
+	left: 50%;
+    margin-left: -25.725px;
 }
 
 .videoThumbWrapper {
