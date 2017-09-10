@@ -35,6 +35,11 @@ h5, .h5 {
 	-o-background-size: cover;
 }
 
+.header .btn {
+	position: absolute;
+	bottom: 2rem;
+}
+
 .videoThumbWrapper {
 	position: relative;
 }
@@ -62,5 +67,8 @@ h5, .h5 {
 @media (min-aspect-ratio: 15/10) { 
 	.header, .footer {
 		background-position: center -85px;
+	}
+	.bottom-feather {
+		display: none!important;
 	}
 }
