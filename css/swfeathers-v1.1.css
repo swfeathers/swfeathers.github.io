@@ -24,6 +24,16 @@ h5, .h5 {
 	transition: color 0.5s;
 }
 
+.navbar {
+    padding: .75rem 1rem;
+    transition: padding 0.5s;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.navbar.top-nav-shrink {
+    padding: .25rem 1rem;
+}
+
 .header, .footer {
 	background-image: url('../img/bg-lightwall.jpg');
 	background-repeat: no-repeat;
