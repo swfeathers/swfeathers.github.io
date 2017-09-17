@@ -31,7 +31,7 @@ h5, .h5 {
 	background-image: url('../img/bg-lightwall.jpg');
 	background-repeat: no-repeat;
 	background-attachment: scroll;
-	background-position: center top;
+	background-position: center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -71,9 +71,9 @@ h5, .h5 {
 }
 
 @media (min-aspect-ratio: 15/10) { 
-	.header, .footer {
+	/*.header, .footer {
 		background-position: center -85px;
-	}
+	}*/
 	.bottom-feather {
 		display: none!important;
 	}
