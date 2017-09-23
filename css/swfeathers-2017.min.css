@@ -9,5 +9,13 @@
 .videoThumbWrapper{position:relative}
 .videoThumbWrapper button.btn{position:absolute;top:50%;left:50%;margin-left:-33px;margin-top:-25.5px}
 .juicer-feed h1.referral,.juicer-feed.slider li.feed-item.feed-item.juicer,.juicer-feed.slider li.feed-item[data-id="31531971"]{display:none}
+.animate-pop-in{animation:pop-in .6s cubic-bezier(0,.9,.3,1.2) forwards;opacity:0}
+header .display-1{animation-delay:.6s}
+header .display-2{animation-delay:.8s}
+.top-feather{animation-delay:1s}
+header .btn{animation-delay:1.1s}
+@keyframes pop-in{0%{opacity:0;transform:translateY(-4rem) scale(.8)}
+100%{opacity:1;transform:none}
+}
 @media (min-aspect-ratio:15/10){.bottom-feather{display:none!important}
 }
