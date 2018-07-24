@@ -61,3 +61,8 @@
 
   ga('create', 'UA-10926428-7', 'auto');
   ga('send', 'pageview');
+
+	// Popper
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
