@@ -65,4 +65,4 @@
 	// Popper
 	$(function () {
 	  $('[data-toggle="tooltip"]').tooltip()
-	})
+	});
