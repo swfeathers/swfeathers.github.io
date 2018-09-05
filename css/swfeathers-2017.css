@@ -106,3 +106,5 @@ header .display-2 {
 		display: none!important;
 	}
 }
+
+.badge {cursor: pointer;}
