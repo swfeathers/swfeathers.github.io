@@ -37,6 +37,6 @@ ipPlayBtn.addEventListener('click', function() {
 });
 
 spacesPlayBtn.addEventListener('click', function() {
-  ipDemo.play()
-  ipMaster.play()
+  spacesDemo.play()
+  spacesMaster.play()
 });
