@@ -6,7 +6,7 @@ CrossfadeSample.play = function() {
   this.ctl2 = createSource(BUFFERS.master);
   // Mute the unchecked source.
   var checkedDemo = document.getElementById("ipDemo").checked;
-  if checkedDemo == true {
+  if (checkedDemo == true) {
   this.ctl2.gainNode.gain.value = 0;
   } else {
   this.ctl1.gainNode.gain.value = 0;
