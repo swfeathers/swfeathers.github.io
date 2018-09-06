@@ -59,6 +59,16 @@ CrossfadeSample.crossfadeToggle = function() {
   document.getElementById('demo-master').value = (document.getElementById('demo-master').value == "Demo" ? "Master" : "Demo");
 };
 
+CrossfadeSample.selectDemo = function() {
+  this.ctl1.gainNode.gain.value = 0;
+  this.ctl2.gainNode.gain.value = 1;
+};
+
+CrossfadeSample.selectMaster = function() {
+  this.ctl1.gainNode.gain.value = 1;
+  this.ctl2.gainNode.gain.value = 0;
+};
+
 CrossfadeSample.playToggle = function() {
   this.playing ? this.stop() : this.play();
   this.playing = !this.playing;
