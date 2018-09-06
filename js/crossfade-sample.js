@@ -49,13 +49,13 @@ CrossfadeSample.stop = function() {
 };
 
 CrossfadeSample.selectDemo = function() {
-  this.ctl1.gainNode.gain.exponentialRampToValueAtTime(1.0, ctl1.currentTime + 1);
-  this.ctl2.gainNode.gain.exponentialRampToValueAtTime(0.01, ctl2.currentTime + 1);
+  this.ctl1.gainNode.gain.exponentialRampToValueAtTime(1.0, demo.currentTime + 1);
+  this.ctl2.gainNode.gain.exponentialRampToValueAtTime(0.01, master.currentTime + 1);
 };
 
 CrossfadeSample.selectMaster = function() {
-  this.ctl1.gainNode.gain.exponentialRampToValueAtTime(0.01, ctl1.currentTime + 1);
-  this.ctl2.gainNode.gain.exponentialRampToValueAtTime(1.0, ctl2.currentTime + 1);
+  this.ctl1.gainNode.gain.exponentialRampToValueAtTime(0.01, demo.currentTime + 1);
+  this.ctl2.gainNode.gain.exponentialRampToValueAtTime(1.0, master.currentTime + 1);
 };
 
 CrossfadeSample.playToggle = function() {
