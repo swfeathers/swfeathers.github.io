@@ -128,23 +128,23 @@
 					<h5>Audio Examples</h5>
 					<p>Injured Party by Resolution feat. Liv Austen</h4>
 					<form class="form-inline mb-3">
-						<input class="btn btn-primary" onclick="CrossfadeSample.playToggle();" type="button" value="Play / Stop">
+						<input class="btn btn-primary" id="ipPlayBtn">
 						<div class="form-check ml-sm-3">
-							<input checked class="form-check-input" id="ipDemo" name="ipRadios" onclick="CrossfadeSample.selectDemo();" type="radio" value="option1"> <label class="form-check-label" for="ipDemo">Demo</label>
+							<input checked class="form-check-input" id="ipDemoRadio" name="ipRadios" onclick="CrossfadeSample.selectDemo();" type="radio" value="demo"> <label class="form-check-label" for="ipDemo">Demo</label>
 						</div>
 						<div class="form-check ml-sm-3">
-							<input class="form-check-input" id="ipMaster" name="ipRadios" onclick="CrossfadeSample.selectMaster();" type="radio" value="option2"> <label class="form-check-label" for="ipMaster">Master</label>
+							<input class="form-check-input" id="ipMasterRadio" name="ipRadios" onclick="CrossfadeSample.selectMaster();" type="radio" value="master"> <label class="form-check-label" for="ipMaster">Master</label>
 						</div>
 					</form>
 					<hr class="border-dark">
 					<p>Spaces by Resolution feat. Cassa Jackson</h4>
 					<form class="form-inline mb-3">
-						<input class="btn btn-primary" onclick="CrossfadeSample.playToggle();" type="button" value="Play / Stop">
+						<input class="btn btn-primary" id="spacesPlayBtn">
 						<div class="form-check ml-sm-3">
-							<input checked class="form-check-input" id="spacesDemo" name="spacesRadios" onclick="CrossfadeSample.selectDemo();" type="radio" value="option1"> <label class="form-check-label" for="spacesDemo">Demo</label>
+							<input checked class="form-check-input" id="spacesDemoRadio" name="spacesRadios" onclick="CrossfadeSample.selectDemo();" type="radio" value="demo"> <label class="form-check-label" for="spacesDemo">Demo</label>
 						</div>
 						<div class="form-check ml-sm-3">
-							<input class="form-check-input" id="spacesMaster" name="spacesRadios" onclick="CrossfadeSample.selectMaster();" type="radio" value="option2"> <label class="form-check-label" for="spacesMaster">Master</label>
+							<input class="form-check-input" id="spacesMasterRadio" name="spacesRadios" onclick="CrossfadeSample.selectMaster();" type="radio" value="master"> <label class="form-check-label" for="spacesMaster">Master</label>
 						</div>
 					</form>
 				</div>
@@ -246,21 +246,20 @@
 	<script crossorigin="anonymous" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js">
 	</script> 
 	<script crossorigin="anonymous" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js">
-	</script> 
+	</script>
 	<script src="//assets.juicer.io/embed-no-jquery.js">
 	</script> 
 	<script src="js/swfeathers-2017.min.js">
-	</script> 
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.15/howler.js" integrity="sha256-JVzfcE4J3mv4smy+OoauJFvHo9SrZKhYPA8TtJlKCX4=" crossorigin="anonymous">
+	</script>
+	<script src="js/feathers-player.js">
+	</script>
 	<script>
 	          var _freshenUrlAfter = ['googleAnalytics'];
 	</script> 
 	<script async src="//fast.wistia.net/labs/fresh-url/v1.js">
 	</script> 
-	<script src="js/buffer-loader.js">
-	</script> 
-	<script src="js/crossfade-sample.js">
-	</script> 
-	<script src="js/init.js">
-	</script>
+	
 </body>
 </html>
