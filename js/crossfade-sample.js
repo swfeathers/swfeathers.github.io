@@ -4,8 +4,12 @@ CrossfadeSample.play = function() {
   // Create two sources.
   this.ctl1 = createSource(BUFFERS.demo);
   this.ctl2 = createSource(BUFFERS.master);
-  // Mute the master source.
-  // this.ctl2.gainNode.gain.value = 0;
+  // Mute the unchecked source.
+  if (document.getElementById('ipDemo').checked = true) {
+  this.ctl2.gainNode.gain.value = 0;
+  } else {
+  this.ctl1.gainNode.gain.value = 0;
+  }
   // Start playback in a loop
   if (!this.ctl1.source.start) {
     this.ctl1.source.noteOn(0);
