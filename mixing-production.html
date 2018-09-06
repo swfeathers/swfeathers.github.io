@@ -59,46 +59,139 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
-    <nav class="navbar fixed-top navbar-expand-md navbar-light text-uppercase">
-        <div class="container">
-            <a class="navbar-brand text-dark page-scroll" href="#top" onclick="ga('send', 'event', 'Menu_Link', 'click', 'Feathers');">Feathers</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#about" onclick="ga('send', 'event', 'Menu_Link', 'click', 'About');">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#music" onclick="ga('send', 'event', 'Menu_Link', 'click', 'Music');">Music</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#discography" onclick="ga('send', 'event', 'Menu_Link', 'click', 'Discography');">Discography</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#contact" onclick="ga('send', 'event', 'Menu_Link', 'click', 'Contact');">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <header id="top" class="header container-fluid d-flex align-items-center justify-content-center text-center">
-        <div>
-            <h1 class="display-1">Sam Featherstone</h1>
-            <h2 class="display-2 ">Music Producer / Mix&nbsp;Engineer</h2>
-            <img class="img-fluid mt-3 top-feather" src="img/feather-1.png" width="300" alt="Feathers">
-        </div>
-        <a href="#about" class="btn btn-primary btn-lg page-scroll" role="button" onclick="ga('send', 'event', 'Menu_Link', 'click', 'Scroll');"> <i class="fa fa-angle-double-down fa-lg"></i>
-        </a>
-    </header>
-    <section id="about" class="py-5">
-        <div class="container">
+	<nav class="navbar fixed-top navbar-expand-md navbar-light text-uppercase">
+		<div class="container">
+			<a class="navbar-brand text-dark page-scroll" href="#top" onclick="ga('send', 'event', 'Menu_Link', 'click', 'Feathers');">Feathers</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link page-scroll" href="#about" onclick="ga('send', 'event', 'Menu_Link', 'click', 'About');">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link page-scroll" href="#music" onclick="ga('send', 'event', 'Menu_Link', 'click', 'Music');">Music</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link page-scroll" href="#discography" onclick="ga('send', 'event', 'Menu_Link', 'click', 'Discography');">Discography</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link page-scroll" href="#contact" onclick="ga('send', 'event', 'Menu_Link', 'click', 'Contact');">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<header class="header container-fluid d-flex align-items-center justify-content-center text-center" id="top">
+		<div>
+		<h1 class="display-1">Sam Featherstone</h1>
+		<h2 class="display-2">Music Producer / Mix&nbsp;Engineer</h2><img alt="Feathers" class="img-fluid mt-3 top-feather" src="img/feather-1.png" width="300"></div><a class="btn btn-primary btn-lg page-scroll" href="#about" onclick="ga('send', 'event', 'Menu_Link', 'click', 'Scroll');" role="button"><i class="fa fa-angle-double-down fa-lg"></i></a>
+	</header>
+	<section class="py-5" id="mixing">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<h2 class="">Mixing</h2>
+					<p class="lead mb-5">Send me your tracks and I'll make them sound better.</p>
+					<p>I've worked on all types of genres, so whether it's Metal or Folk, Jazz or Classical I will be able to bring a professional sheen to your work.</p>
+					<p>I'll ask you about who your favourite artists are and what you want your music to sound like, that way we'll be on the same page and I can quickly get the sound your looking for.</p>
+					<p>All I ask is that the material has been recorded well. For that reason I will usually ask that you send me one of the tracks ahead of time, so that I can check everything over. At that stage I will also be able to quote an appropriate price. I.e. mixing a vocal to a prepared backing track is not going to cost as much as an monster session with multitracked drums, an orchestra and three choirs' worth of backing vocals!</p>
+					<p>If the tracks still need a bit of editing or tuning etc. then we can talk about that too. Furthermore if there's some production elements you'd still like to add, we can look into that. More about that <a href="#">below</a>.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="py-5" id="production">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<h2 class="">Production</h2>
+					<p class="lead mb-5">Got a song demo and need help taking it to the next level? Then I'm your man.</p>
+					<p>I love the challenge of helping someone realise their song's potential.</p>
+					<p>I grew up playing in bands, so writing songs and working on arrangments is something I love doing. I could talk about the different produciton elements I like to bring to a project, but it might be easier to just have a listen. Play one of tracks on the left to see what I added to the original demoes.</p>
+					<form class="form-inline justify-content-center">
+						<input class="btn btn-primary" onclick="CrossfadeSample.playToggle();" type="button" value="Play / Stop">
+						<div class="form-check">
+							<input checked class="form-check-input" id="ipDemo" name="ipRadios" onclick="CrossfadeSample.selectDemo();" type="radio" value="option1"> <label class="form-check-label" for="ipDemo">Demo</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" id="ipMaster" name="ipRadios" onclick="CrossfadeSample.selectMaster();" type="radio" value="option2"> <label class="form-check-label" for="ipMaster">Master</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="social">
+		<h2 class="sr-only">Social Media Feed</h2>
+		<ul class="juicer-feed" data-feed-id="swfeathers" data-per="15"></ul>
+	</section>
+	<footer class="footer container-fluid d-flex flex-column text-center justify-content-center align-items-center" id="contact">
+		<div class="mt-5 mt-lg-0">
+			<h2 class="mt-5 mt-md-0">Contact</h2>
+			<ul class="list-unstyled list-inline">
+				<li class="list-inline-item">
+					<a href="https://twitter.com/swfeathers" onclick="ga('send', 'event', 'Page_Link', 'click', 'Contact-Twitter');" target="_blank"><i class="fa fa-twitter-square fa-2x fa-fw"></i></a>
+				</li>
+				<li class="list-inline-item">
+					<a href="https://www.facebook.com/swfeathers" onclick="ga('send', 'event', 'Page_Link', 'click', 'Contact-Facebook');" target="_blank"><i class="fa fa-facebook-square fa-2x fa-fw"></i></a>
+				</li>
+				<li class="list-inline-item">
+					<a href="https://www.instagram.com/swfeathers/" onclick="ga('send', 'event', 'Page_Link', 'click', 'Contact-Instagram');" target="_blank"><i class="fa fa-instagram fa-2x fa-fw"></i></a>
+				</li>
+				<li class="list-inline-item">
+					<a href="https://uk.linkedin.com/in/sam-featherstone-1484a575" onclick="ga('send', 'event', 'Page_Link', 'click', 'Contact-LinkedIn');" target="_blank"><i class="fa fa-linkedin-square fa-2x fa-fw"></i></a>
+				</li>
+			</ul>
+		</div>
+		<form accept-charset="utf-8" action="https://submit.jotformeu.com/submit/60455144567357/" class="jotform-form mw-100" id="60455144567357" method="post" name="form_60455144567357" role="form" style="width: 570px">
+			<input name="formID" type="hidden" value="60455144567357">
+			<div class="form-group">
+				<label class="sr-only" for="input_1">Name</label> <input class="form-control" data-type="input-textbox" id="input_1" name="q1_name" placeholder="Name" type="text">
+			</div>
+			<div class="form-group">
+				<label class="sr-only" for="input_2">Email</label> <input class="form-control" id="input_2" name="q2_email" placeholder="E-Mail" type="email">
+			</div>
+			<div class="form-group">
+				<label class="sr-only" for="input_5">Message</label> <input class="form-control" data-type="input-textbox" id="input_5" name="q5_message" placeholder="Message" type="text">
+			</div>
+			<div class="form-group">
+				<button class="btn btn-primary btn-block" id="input_4" name="submit" type="submit">Send</button>
+			</div><input id="simple_spc" name="simple_spc" type="hidden" value="60455144567357"> 
+			<script type="text/javascript">
+			                      document.getElementById("si" + "mple" + "_spc").value = "60455144567357-60455144567357";
+			</script>
+		</form><img alt="Feathers" class="img-fluid bottom-feather mt-3 d-none d-lg-inline" src="img/feather-1.png" width="300">
+	</footer><!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script> 
+	<script crossorigin="anonymous" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js">
+	</script> 
+	<script crossorigin="anonymous" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js">
+	</script> 
+	<script crossorigin="anonymous" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js">
+	</script> 
+	<script src="//assets.juicer.io/embed-no-jquery.js">
+	</script> 
+	<script src="js/swfeathers-2017.min.js">
+	</script> 
+	<script>
+	          var _freshenUrlAfter = ['googleAnalytics'];
+	</script> 
+	<script async src="//fast.wistia.net/labs/fresh-url/v1.js">
+	</script> 
+	<script src="js/buffer-loader.js">
+	</script> 
+	<script src="js/crossfade-sample.js">
+	</script> 
+	<script src="js/init.js">
+	</script>
+</body>
+</html>
             <div class="row">
                 <div class="col text-center">
-                    <h4 class="">Mixing</h4>
+                    <h2 class="">Mixing</h2>
+		    <p class="lead mb-5">Send me your tracks and I'll make them sound better.</p>
                     <p>
-                        Send me your tracks and I'll make them sound better. I've worked on all types of genres, so whether it's Metal or Folk, Jazz or Classical I will be able to bring a professional sheen to your work.
+                        I've worked on all types of genres, so whether it's Metal or Folk, Jazz or Classical I will be able to bring a professional sheen to your work.
                     </p>
                     <p>
                         I'll ask you about who your favourite artists are and what you want your music to sound like, that way we'll be on the same page and I can quickly get the sound your looking for.
@@ -109,14 +202,24 @@
                     <p>
                         If the tracks still need a bit of editing or tuning etc. then we can talk about that too. Furthermore if there's some production elements you'd still like to add, we can look into that. More about that <a href="#">below</a>.
                     </p>
-                    <h4 class="text-xs-center">Producing</h4>
-                    <p>
-                        Got a song demo a need help taking it to the next level? Then I'm your man. I love the challenge of helping someone realise their song's potential.
+		</div>
+	    </div>
+	</div>
+    </section>
+    <section id="production" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="">Prodcution</h2>
+                    <p class="lead mb-5">
+                        Got a song demo a need help taking it to the next level? Then I'm your man.
+			</p>
+		    <p>I love the challenge of helping someone realise their song's potential.
                     </p>
                     <p>
                         I grew up playing in bands, so writing songs and working on arrangments is something I love doing. I could talk about the different produciton elements I like to bring to a project, but it might be easier to just have a listen. Play one of tracks on the left to see what I added to the original demoes.
                     </p>
-                    <form class="form-inline">
+                    <form class="form-inline justify-content-center">
                         <input type="button" class="btn btn-primary" onclick="CrossfadeSample.playToggle();" value="Play / Stop">
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="ipRadios" id="ipDemo" value="option1" checked onclick="CrossfadeSample.selectDemo();">
