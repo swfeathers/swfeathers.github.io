@@ -1,3 +1,4 @@
 User-Agent: *
 Disallow: /cortex/
-Disallow: /mixing-production.html
+Disallow: /mixing-production-old.html
+Disallow: /index-old.html
