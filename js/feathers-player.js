@@ -6,25 +6,25 @@ elms.forEach(function(elm) {
 
 function loadAll() {
 var ipDemo = new Howl({
-  src: ['../sounds/ipDemo.mp3'],
+  src: ['../sounds/ip-Demo.mp3'],
   preload: true,
   loop: true,
   volume: 1.0
 });
 var ipMaster = new Howl({
-  src: ['../sounds/ipMaster.mp3'],
+  src: ['../sounds/ip-Master.mp3'],
   preload: true,
   loop: true,
   volume: 0.0
 });
 var spacesDemo = new Howl({
-  src: ['../sounds/spacesDemo.mp3'],
+  src: ['../sounds/spaces-Demo.mp3'],
   preload: true,
   loop: true,
   volume: 1.0
 });
 var spacesMaster = new Howl({
-  src: ['../sounds/spacesMaster.mp3'],
+  src: ['../sounds/spaces-Master.mp3'],
   preload: true,
   loop: true,
   volume: 0.0
