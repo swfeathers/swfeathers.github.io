@@ -31,8 +31,13 @@ var spacesMaster = new Howl({
 });
 
 ipPlayBtn.addEventListener('click', function() {
+  if (ipDemo.playing() == false) {
   ipDemo.play();
   ipMaster.play();
+  } else {
+	ipDemo.pause();
+	ipMaster.pause();
+  };
 });
 
 ipDemoRadio.addEventListener('click', function() {
@@ -48,6 +53,16 @@ ipMasterRadio.addEventListener('click', function() {
 spacesPlayBtn.addEventListener('click', function() {
   spacesDemo.play();
   spacesMaster.play();
+});
+
+spacesDemoRadio.addEventListener('click', function() {
+  spacesDemo.volume(1.0);
+  spacesMaster.volume(0.0);
+});
+
+spacesMasterRadio.addEventListener('click', function() {
+  spacesDemo.volume(0.0);
+  spacesMaster.volume(1.0);
 });
 
 };
