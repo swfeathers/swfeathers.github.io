@@ -29,7 +29,6 @@ var spacesMaster = new Howl({
   loop: true,
   volume: 0.0
 });
-};
 
 ipPlayBtn.addEventListener('click', function() {
   ipDemo.play()
@@ -40,3 +39,5 @@ spacesPlayBtn.addEventListener('click', function() {
   spacesDemo.play()
   spacesMaster.play()
 });
+
+};
