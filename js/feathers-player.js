@@ -31,13 +31,23 @@ var spacesMaster = new Howl({
 });
 
 ipPlayBtn.addEventListener('click', function() {
-  ipDemo.play()
-  ipMaster.play()
+  ipDemo.play();
+  ipMaster.play();
+});
+
+ipDemoRadio.addEventListener('click', function() {
+  ipDemo.volume(1.0);
+  ipMaster.volume(0.0);
+});
+
+ipMasterRadio.addEventListener('click', function() {
+  ipDemo.volume(0.0);
+  ipMaster.volume(1.0);
 });
 
 spacesPlayBtn.addEventListener('click', function() {
-  spacesDemo.play()
-  spacesMaster.play()
+  spacesDemo.play();
+  spacesMaster.play();
 });
 
 };
