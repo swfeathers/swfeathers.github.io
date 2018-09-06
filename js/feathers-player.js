@@ -4,7 +4,7 @@ elms.forEach(function(elm) {
   window[elm] = document.getElementById(elm);
 });
 
-function loadAll() {
+function loadSongs() {
 var ipDemo = new Howl({
   src: ['../sounds/ip-demo.mp3'],
   preload: true,
@@ -51,8 +51,13 @@ ipMasterRadio.addEventListener('click', function() {
 });
 
 spacesPlayBtn.addEventListener('click', function() {
+  if (spacesDemo.playing() == false) {
   spacesDemo.play();
   spacesMaster.play();
+  } else {
+	spacesDemo.pause();
+	spacesMaster.pause();
+  };
 });
 
 spacesDemoRadio.addEventListener('click', function() {
