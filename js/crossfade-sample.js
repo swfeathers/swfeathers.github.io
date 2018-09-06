@@ -5,7 +5,8 @@ CrossfadeSample.play = function() {
   this.ctl1 = createSource(BUFFERS.demo);
   this.ctl2 = createSource(BUFFERS.master);
   // Mute the unchecked source.
-  if (document.getElementById('ipDemo').checked = true) {
+  var checkedDemo = document.getElementById("ipDemo").checked;
+  if checkedDemo == true {
   this.ctl2.gainNode.gain.value = 0;
   } else {
   this.ctl1.gainNode.gain.value = 0;
@@ -45,22 +46,6 @@ CrossfadeSample.stop = function() {
     this.ctl1.source.stop(0);
     this.ctl2.source.stop(0);
   }
-};
-
-// Fades between 0 (all source 1) and 1 (all source 2)
-CrossfadeSample.crossfade = function(element) {
-  var x = parseInt(element.value) / parseInt(element.max);
-  // Use an equal-power crossfading curve:
-  var gain1 = Math.cos(x * 0.5*Math.PI);
-  var gain2 = Math.cos((1.0 - x) * 0.5*Math.PI);
-  this.ctl1.gainNode.gain.value = gain1;
-  this.ctl2.gainNode.gain.value = gain2;
-};
-
-CrossfadeSample.crossfadeToggle = function() {
-  this.ctl1.gainNode.gain.value = (this.ctl1.gainNode.gain.value == 0 ? 1 : 0);
-  this.ctl2.gainNode.gain.value = (this.ctl2.gainNode.gain.value == 0 ? 1 : 0);
-  document.getElementById('demo-master').value = (document.getElementById('demo-master').value == "Demo" ? "Master" : "Demo");
 };
 
 CrossfadeSample.selectDemo = function() {
