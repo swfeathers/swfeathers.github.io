@@ -51,13 +51,8 @@ function loadSongs() {
 	});
 
 	spacesPlayBtn.addEventListener('click', function() {
-	  if (spacesDemo.playing() == false) {
 	  spacesDemo.play();
 	  spacesMaster.play();
-	  } else {
-		spacesDemo.pause();
-		spacesMaster.pause();
-	  };
 	});
 
 	spacesDemoRadio.addEventListener('click', function() {
