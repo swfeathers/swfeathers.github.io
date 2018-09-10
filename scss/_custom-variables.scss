@@ -162,6 +162,13 @@ $table-border-color:            $gray-300;
 
 $input-color:                   $gray-900;
 
+// Navbar
+
+$navbar-light-color:                $gray-900;
+$navbar-light-hover-color:          map_get($theme-colors, 'primary');
+$navbar-light-active-color:         map_get($theme-colors, 'primary');
+$navbar-light-toggler-border-color: transparent;
+
 // Modals
 
 // Padding applied to the modal body
