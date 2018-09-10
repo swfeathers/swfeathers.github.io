@@ -125,6 +125,7 @@
 					<p>I grew up playing in bands, so writing songs and working on arrangments is something I love doing. I could talk about the different produciton elements I like to bring to a project, but it might be easier to just have a listen.</p>
 					<p>Play one of tracks on the right to see what I added to the original demos. Make sure to listent to the different sections and toggle between 'Demo' and 'Master' to hear what I added.</p>
 				</div>
+				<div id="jquery_jplayer_1" class="jp-jplayer"></div>
 				<div class="col bg-light pt-3 feathers-player">
 					<h5>Audio Examples</h5>
 					<p>Injured Party by Resolution feat. Liv Austen</h4>
@@ -251,7 +252,52 @@
 	<script src="js/swfeathers-2017.min.js">
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/jplayer/jquery.jplayer.min.js" integrity="sha256-YAIw54P6OPiIkUJq8S3ayOEunEz/MiK2AxDY0oFLNBs=" crossorigin="anonymous">
-  </script>
+  	</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $("#jquery_jplayer_1").jPlayer({
+        ready: function () {
+          $(this).jPlayer("setMedia", {
+            title: "Injured Party",
+            mp3: "http://www.swfeathers.co.uk/sounds/ip-demo.mp3"
+          });
+        },
+        cssSelectorAncestor: '#jp_container',
+	 cssSelector: {
+	  videoPlay: '.jp-video-play',
+	  play: '#ipPlayBtn',
+	  pause: '.jp-pause',
+	  stop: '.jp-stop',
+	  seekBar: '.jp-seek-bar',
+	  playBar: '.jp-play-bar',
+	  mute: '.jp-mute',
+	  unmute: '.jp-unmute',
+	  volumeBar: '.jp-volume-bar',
+	  volumeBarValue: '.jp-volume-bar-value',
+	  volumeMax: '.jp-volume-max',
+	  playbackRateBar: '.jp-playback-rate-bar',
+	  playbackRateBarValue: '.jp-playback-rate-bar-value',
+	  currentTime: '.jp-current-time',
+	  duration: '.jp-duration',
+	  title: '.jp-title',
+	  fullScreen: '.jp-full-screen',
+	  restoreScreen: '.jp-restore-screen',
+	  repeat: '.jp-repeat',
+	  repeatOff: '.jp-repeat-off',
+	  gui: '.jp-gui',
+	  noSolution: '.jp-no-solution'
+	 },
+        swfPath: "/js",
+        supplied: "mp3",
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true,
+        remainingDuration: true,
+        toggleDuration: true
+      });
+    });
+</script>
 	<script>
 	          var _freshenUrlAfter = ['googleAnalytics'];
 	</script> 
