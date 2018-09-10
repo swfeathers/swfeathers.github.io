@@ -248,38 +248,6 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<!-- <script src="//assets.juicer.io/embed-no-jquery.js"> 
 	</script> !-->
-	<script>
-function webAudioTouchUnlock (context)
-{
-    return new Promise(function (resolve, reject)
-    {
-        if (context.state === 'suspended' && 'ontouchstart' in window)
-        {
-            var unlock = function()
-            {
-                context.resume().then(function()
-                {
-                    document.body.removeEventListener('touchstart', unlock);
-                    document.body.removeEventListener('touchend', unlock);
-
-                    resolve(true);
-                }, 
-                function (reason)
-                {
-                    reject(reason);
-                });
-            };
-
-            document.body.addEventListener('touchstart', unlock, false);
-            document.body.addEventListener('touchend', unlock, false);
-        }
-        else
-        {
-            resolve(false);
-        }
-    });
-}
-</script>
 	<script src="js/swfeathers-2017.min.js">
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.15/howler.js" integrity="sha256-JVzfcE4J3mv4smy+OoauJFvHo9SrZKhYPA8TtJlKCX4=" crossorigin="anonymous">
