@@ -4,41 +4,6 @@
  *  Built with the Bootstrap Theme Kit by HackerThemes (https://hackerthemes.com)
  */
 
-@import "../node_modules/bootstrap/scss/bootstrap/functions";
 @import 'custom-variables';
-/* @import '../node_modules/bootstrap/scss/bootstrap'; */
-@import "../node_modules/bootstrap/scss/bootstrap/variables";
-@import "../node_modules/bootstrap/scss/bootstrap/mixins";
-@import "../node_modules/bootstrap/scss/bootstrap/root";
-@import "../node_modules/bootstrap/scss/bootstrap/reboot";
-@import "../node_modules/bootstrap/scss/bootstrap/type";
-@import "../node_modules/bootstrap/scss/bootstrap/images";
-@import "../node_modules/bootstrap/scss/bootstrap/code";
-@import "../node_modules/bootstrap/scss/bootstrap/grid";
-@import "../node_modules/bootstrap/scss/bootstrap/tables";
-@import "../node_modules/bootstrap/scss/bootstrap/forms";
-@import "../node_modules/bootstrap/scss/bootstrap/buttons";
-@import "../node_modules/bootstrap/scss/bootstrap/transitions";
-@import "../node_modules/bootstrap/scss/bootstrap/dropdown";
-@import "../node_modules/bootstrap/scss/bootstrap/button-group";
-@import "../node_modules/bootstrap/scss/bootstrap/input-group";
-@import "../node_modules/bootstrap/scss/bootstrap/custom-forms";
-@import "../node_modules/bootstrap/scss/bootstrap/nav";
-@import "../node_modules/bootstrap/scss/bootstrap/navbar";
-@import "../node_modules/bootstrap/scss/bootstrap/card";
-@import "../node_modules/bootstrap/scss/bootstrap/breadcrumb";
-@import "../node_modules/bootstrap/scss/bootstrap/pagination";
-@import "../node_modules/bootstrap/scss/bootstrap/badge";
-@import "../node_modules/bootstrap/scss/bootstrap/jumbotron";
-@import "../node_modules/bootstrap/scss/bootstrap/alert";
-@import "../node_modules/bootstrap/scss/bootstrap/progress";
-@import "../node_modules/bootstrap/scss/bootstrap/media";
-@import "../node_modules/bootstrap/scss/bootstrap/list-group";
-@import "../node_modules/bootstrap/scss/bootstrap/close";
-@import "../node_modules/bootstrap/scss/bootstrap/modal";
-@import "../node_modules/bootstrap/scss/bootstrap/tooltip";
-@import "../node_modules/bootstrap/scss/bootstrap/popover";
-@import "../node_modules/bootstrap/scss/bootstrap/carousel";
-@import "../node_modules/bootstrap/scss/bootstrap/utilities";
-@import "../node_modules/bootstrap/scss/bootstrap/print";
+@import '../node_modules/bootstrap/scss/bootstrap';
 @import 'custom-styles';
