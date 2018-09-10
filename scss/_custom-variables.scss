@@ -1,0 +1,201 @@
+// Overwrite Bootstrap's variables here
+// You can find them in node_modules/bootstrap/scss/_variables.scss
+// Copy the variables you need into this file, don't modify files under node_modules/
+
+// Some example variables that you can uncomment:
+
+// Enabling shadows and gradients
+//$enable-shadows: true;
+//$enable-gradients: true;
+
+// Changing the body background and text
+//$body-bg: #d3e9eb;
+//$body-color: #151417;
+
+// Changing the border radius of buttons
+//$border-radius: 15px;
+
+// Changing the theme colors
+//$primary: #202f41;
+//$secondary: #436296;
+//$success: #2bc550;
+//$info: #495dff;
+//$warning: #ef8143;
+//$danger: #ff293a;
+//$light: #dfe6ee;
+//$dark: #0f1319;
+
+
+// Adding (!) an additional theme color (ex. classes btn-cool, bg-cool)
+//$theme-colors: (
+//  "cool": #4d3fa3
+//);
+
+// Color system
+//
+
+$white:  #fff;
+$gray-100: #fffefc;
+$gray-200: #e8eaed;
+$gray-300: #d2d5db;
+$gray-400: #b9bfc9;
+$gray-500: #95a0b2;
+$gray-600: #789fe2;
+$gray-700: #3767ba;
+$gray-800: #0b3e96;
+$gray-900: #021432;
+$black:  #000;
+
+$blue:    #336ccc;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #dc3545;
+$orange:  #bf6e26;
+$yellow:  #ffc107;
+$green:   #28a745;
+$teal:    #20c997;
+$cyan:    #17a2b8;
+
+$theme-colors: (
+  primary: $blue,
+  secondary: $orange,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $gray-200,
+  dark: $gray-900
+);
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-rounded:            false;
+
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: ($spacer * .333),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 2),
+  5: ($spacer * 3)
+);
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:       $gray-100;
+$body-color:    $gray-900;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:            theme-color("primary");
+$link-decoration:       none;
+$link-hover-color:      $gray-800;
+$link-hover-decoration: underline;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$border-width: 1px;
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-size-base: 1rem;
+$font-size-lg:   1.272rem;
+$font-size-sm:   .786rem;
+
+$h1-font-size: 4.236rem;
+$h2-font-size: 2.618rem;
+$h3-font-size: 2.058rem;
+$h4-font-size: 1.618rem;
+$h5-font-size: 1.272rem;
+$h6-font-size: 1rem;
+
+$headings-line-height:   1.1;
+
+$display1-size: 2.058rem;
+$display2-size: 1.618rem;
+$display3-size: 1.618rem;
+$display4-size: 1.618rem;
+
+$display1-weight: 400;
+$display2-weight: 200;
+$display3-weight: 200;
+$display4-weight: 200;
+
+$lead-font-size:   1.618rem;
+$lead-font-weight: 200;
+
+$small-font-size: 78.6%;
+
+$text-muted: $gray-600;
+
+$hr-border-color: $gray-200;
+
+
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+$table-accent-bg:               $gray-200;
+
+$table-border-color:            $gray-300;
+
+// Navbar
+
+$navbar-light-color:                $gray-900;
+$navbar-light-hover-color:          theme-color("primary");
+$navbar-light-active-color:         theme-color("primary");
+$navbar-light-toggler-icon-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23");
+$navbar-light-toggler-border-color: transparent;
+
+
+// Modals
+
+// Padding applied to the modal body
+$modal-inner-padding:         1rem;
+
+$modal-dialog-margin:         1rem;
+$modal-dialog-margin-y-sm-up: 2rem;
+
+$modal-title-line-height:     $headings-line-height;
+
+$modal-content-bg:               $gray-100;
+$modal-content-border-color:     rgba($black, .2);
+$modal-content-border-width:     $border-width;
+$modal-content-box-shadow-xs:    0 3px 9px rgba($black, .5);
+$modal-content-box-shadow-sm-up: 0 5px 15px rgba($black, .5);
+
+$modal-backdrop-bg:           $black;
+$modal-backdrop-opacity:      .5;
+$modal-header-border-color:   $gray-200;
+$modal-footer-border-color:   $modal-header-border-color;
+$modal-header-border-width:   $modal-content-border-width;
+$modal-footer-border-width:   $modal-header-border-width;
+$modal-header-padding:        1rem;
+
+$modal-lg:                    1312px;
+$modal-md:                    500px;
+$modal-sm:                    300px;
+
+// Figures
+
+$figure-caption-font-size: $font-size-sm;
+$figure-caption-color:     $gray-900;

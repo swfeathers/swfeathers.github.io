@@ -1,0 +1,54 @@
+// Add additional styles here. For example, overwrite certain styles or add new components.
+// Tip: You can use bootstrap's powerful mixins here!
+
+
+//.alert-myalert {
+//  @include alert-variant(#60667d, #1d1d1d, #f4fdff);
+//}
+
+//@each $color, $value in $theme-colors {
+//  .alert-#{$color} {
+//    box-shadow: 3px 3px theme-color-level($color, -3);
+//  }
+//}
+
+// Feathers
+
+section {
+  border-bottom: 1rem solid $gray-200;
+  &:last-of-type {
+    border-bottom: 0;
+  }
+}
+
+.cover {
+  border: 1px solid $gray-200;
+}
+
+@include media-breakpoint-up(sm) {
+  .display-1 {
+    font-size: 2.618rem !important;
+    letter-spacing: .25rem !important;
+  }
+  .display-2 {
+    font-size: 2.058rem !important;
+    letter-spacing: .25rem !important;
+  }
+  .top-feather {
+    width: 400px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .display-1 {
+    font-size: 4.236rem !important;
+    letter-spacing: .5rem !important;
+  }
+  .display-2 {
+    font-size: 2.618rem !important;
+    letter-spacing: .5rem !important;
+  }
+  .top-feather {
+    width: 600px;
+  }
+}
