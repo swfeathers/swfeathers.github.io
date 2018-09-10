@@ -126,7 +126,7 @@
 					<p>Play one of tracks on the right to see what I added to the original demos. Make sure to listent to the different sections and toggle between 'Demo' and 'Master' to hear what I added.</p>
 				</div>
 				<div id="jquery_jplayer_1" class="jp-jplayer"></div>
-				<div class="col bg-light pt-3 feathers-player">
+				<div id="feathers-player-container" class="col bg-light pt-3">
 					<h5>Audio Examples</h5>
 					<p>Injured Party by Resolution feat. Liv Austen</h4>
 					<form class="form-inline mb-3">
@@ -262,7 +262,7 @@
             mp3: "http://www.swfeathers.co.uk/sounds/ip-demo.mp3"
           });
         },
-        cssSelectorAncestor: '#jp_container',
+        cssSelectorAncestor: '#feathers-player-container',
 	 cssSelector: {
 	  videoPlay: '.jp-video-play',
 	  play: '#ipPlayBtn',
@@ -289,7 +289,6 @@
 	 },
         swfPath: "/js",
         supplied: "mp3",
-        useStateClassSkin: true,
         autoBlur: false,
         smoothPlayBar: true,
         keyEnabled: true,
