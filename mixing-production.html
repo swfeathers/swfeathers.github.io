@@ -128,8 +128,8 @@
 					<p class="small"><em>Make sure your phone isn't switched to mute.</em></p>
 					<p>Injured Party by Resolution feat. Liv Austen</h4>
 						<div class="btn-toolbar" role="toolbar">
-							<div id="ipPlayBtn" class="btn-group-toggle" data-toggle="buttons">
-							  <label class="btn btn-primary playBtn">
+							<div class="btn-group-toggle mr-3" data-toggle="buttons">
+							  <label id="ipPlayBtn" class="btn btn-primary playBtn px-3">
 							    <input type="checkbox" autocomplete="off"><i class="fas fa-play"></i>
 							  </label>
 							</div>
@@ -144,17 +144,21 @@
 						</div>
 					<hr class="border-dark">
 					<p>Spaces by Resolution feat. Cassa Jackson</h4>
-					<form class="form-inline mb-3">
-						<button class="btn btn-primary playBtn px-4 mb-2 mb-sm-0" id="spacesPlayBtn" type="button" data-toggle="button" aria-pressed="false" autocomplete="off">
-							<i class="fas fa-play"></i>
-						</button>
-						<div class="form-check ml-sm-3 mb-1 mb-sm-0">
-							<input checked class="form-check-input" id="spacesDemoRadio" name="spacesRadios" type="radio" value="demo"> <label class="form-check-label" for="spacesDemo">Demo</label>
+					<div class="btn-toolbar" role="toolbar">
+						<div class="btn-group-toggle mr-3" data-toggle="buttons">
+						  <label id="spacesPlayBtn" class="btn btn-primary playBtn px-3">
+						    <input type="checkbox" autocomplete="off"><i class="fas fa-play"></i>
+						  </label>
 						</div>
-						<div class="form-check ml-sm-3">
-							<input class="form-check-input" id="spacesMasterRadio" name="spacesRadios" type="radio" value="master"> <label class="form-check-label" for="spacesMaster">Master</label>
+						<div class="btn-group btn-group-toggle" data-toggle="buttons">
+						  <label id="spacesDemoRadio" class="btn btn-primary active">
+						    <input type="radio" name="spacesRadios" autocomplete="off" checked>Demo
+						  </label>
+						  <label id="spacesMasterRadio" class="btn btn-primary">
+						    <input type="radio" name="spacesRadios" autocomplete="off">Master
+						  </label>
 						</div>
-					</form>
+					</div>
 				</div>
 			</div>
 		</div>
