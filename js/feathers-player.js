@@ -35,11 +35,9 @@ ipPlayBtn.addEventListener('click', function() {
   if (ipDemo.playing() == false) {
   ipDemo.play();
   ipMaster.play();
-  $('#ipPlayBtn').addClass('playing');
   } else {
 	ipDemo.pause();
 	ipMaster.pause();
-  $('#ipPlayBtn').removeClass('playing');
   };
 });
 
