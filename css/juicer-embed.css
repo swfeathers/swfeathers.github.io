@@ -1940,6 +1940,7 @@
     position: relative;
 }
 .juicer-feed.slider li.feed-item {
+    border-right: 1px solid white;
     display: block;
 }
 .juicer-feed.slider li.feed-item a.j-image {
