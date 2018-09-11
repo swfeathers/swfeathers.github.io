@@ -165,4 +165,6 @@ header .display-2 {
   }
 }
 
-.badge {cursor: pointer;}
+#ipPlayBtn.active .fa-play::before {
+    content: "\f04c";
+}
