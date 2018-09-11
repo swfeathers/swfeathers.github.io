@@ -127,21 +127,23 @@
 					<h5>Audio Examples</h5>
 					<p class="small"><em>Make sure your phone isn't switched to mute.</em></p>
 					<p>Injured Party by Resolution feat. Liv Austen</h4>
-					<form class="form-inline mb-3">
-						<button class="btn btn-primary playBtn mb-2 mb-sm-0" id="ipPlayBtn" type="button" data-toggle="button" aria-pressed="false" autocomplete="off">
-							<i class="fas fa-play"></i>
-						</button>
-						<div class="form-check ml-sm-3 mb-1 mb-sm-0">
-							<input checked class="form-check-input" id="ipDemoRadio" name="ipRadios" type="radio" value="demo"> <label class="form-check-label" for="ipDemo">Demo</label>
+						<div class="btn-group-toggle" data-toggle="buttons">
+						  <label class="playBtn btn">
+						    <input id="ipPlayBtn" type="checkbox" autocomplete="off"><i class="fas fa-play"></i>
+						  </label>
 						</div>
-						<div class="form-check ml-sm-3">
-							<input class="form-check-input" id="ipMasterRadio" name="ipRadios" type="radio" value="master"> <label class="form-check-label" for="ipMaster">Master</label>
+						<div class="btn-group btn-group-toggle" data-toggle="buttons">
+						  <label class="btn active">
+						    <input type="radio" name="ipRadios id="ipDemoRadio" autocomplete="off" checked>Demo
+						  </label>
+						  <label class="btn">
+						    <input type="radio" name="ipRadios" id="ipMasterRadio" autocomplete="off">Master
+						  </label>
 						</div>
-					</form>
 					<hr class="border-dark">
 					<p>Spaces by Resolution feat. Cassa Jackson</h4>
 					<form class="form-inline mb-3">
-						<button class="btn btn-primary playBtn mb-2 mb-sm-0" id="spacesPlayBtn" type="button" data-toggle="button" aria-pressed="false" autocomplete="off">
+						<button class="btn btn-primary playBtn px-4 mb-2 mb-sm-0" id="spacesPlayBtn" type="button" data-toggle="button" aria-pressed="false" autocomplete="off">
 							<i class="fas fa-play"></i>
 						</button>
 						<div class="form-check ml-sm-3 mb-1 mb-sm-0">
