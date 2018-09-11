@@ -165,6 +165,6 @@ header .display-2 {
   }
 }
 
-#ipPlayBtn.active .fa-play::before {
+.playBtn.active .fa-play::before {
     content: "\f04c";
 }
