@@ -173,14 +173,14 @@ header .display-2 {
     content: "\f04c";
 }
 
-.switchBtn {
+#production .switchBtn {
   background-color: #2956a3;
   border-color: #265199;
   -webkit-box-shadow: 0 0 8px 4px rgba(0,0,0,0.4) inset;
   box-shadow: 0 0 8px 4px rgba(0,0,0,0.4) inset;
 }
 
-.switchBtn.active {
+#production .switchBtn.active {
   background-color: #336ccc;
   border-color: #336ccc;
   -webkit-box-shadow: none;
