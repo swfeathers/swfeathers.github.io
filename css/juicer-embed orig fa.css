@@ -710,11 +710,13 @@
     top: -1px !important;
 }
 .j-social-icon:before {
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+    font-family: 'fontawesome-webfont'}
+@font-face {
+    font-family: "fontawesome-webfont";
+    src: url(//assets.juicer.io/fontawesome-webfont-7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979.eot);
+    src: url(//assets.juicer.io/fontawesome-webfont-7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979.eot?#iefix) format("embedded-opentype"), url(//assets.juicer.io/fontawesome-webfont-adbc4f95eb6d7f2738959cf0ecbc374672fce47e856050a8e9791f457623ac2c.woff) format("woff"), url(//assets.juicer.io/fontawesome-webfont-ae19e2e4c04f2b04bf030684c4c1db8faf5c8fe3ee03d1e0c409046608b38912.ttf) format("truetype"), url(//assets.juicer.io/fontawesome-webfont-e0d04e3fed3df6f5d84bc45d9b96279e7177b1b8c3d18d567af75af5997ff73b.svg#fontawesome-webfont) format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 .j-sprite, .juicer-feed h1.referral a:after, .juicer-feed li.feed-item.j-twitter .j-retweet:before, .juicer-feed .j-meta .j-twitter-intents a, .j-gallery .j-image:after, .j-gallery-nav .j-gallery-arrow, .j-overlay .j-close {
     text-indent: -9999px;
@@ -1154,7 +1156,7 @@
     display: block;
 }
 .juicer-feed li.feed-item.j-video a.j-image:before {
-    font-family: "FontAwesome", Helvetica, Arial, sans-serif;
+    font-family: "fontawesome-webfont", Helvetica, Arial, sans-serif;
     font-size: 2.5rem;
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -1333,7 +1335,7 @@
     display: inline-block;
 }
 .juicer-feed ul.j-filters li:before {
-    font-family: "FontAwesome", Helvetica, Arial, sans-serif;
+    font-family: "fontawesome-webfont", Helvetica, Arial, sans-serif;
     font-size: 14px;
     margin: 0 5px 0 0;
     font-weight: normal;
@@ -1485,7 +1487,7 @@
     margin: 0;
 }
 .juicer-feed .j-meta a:before {
-    font-family: "FontAwesome", Helvetica, Arial, sans-serif;
+    font-family: "fontawesome-webfont", Helvetica, Arial, sans-serif;
     font-size: 1em;
     margin-right: 5px;
 }
@@ -2004,7 +2006,7 @@
     z-index: 99;
 }
 .juicer-feed.slider .slick-prev:before, .juicer-feed.slider .slick-next:before {
-    font-family: "FontAwesome", Helvetica, Arial, sans-serif;
+    font-family: "fontawesome-webfont", Helvetica, Arial, sans-serif;
     font-size: 4rem;
     line-height: 43px;
     color: white;
@@ -2558,7 +2560,7 @@
     font-size: 0;
 }
 .j-poster .j-twitter-post-icon:before {
-    font-family: "FontAwesome", Helvetica, Arial, sans-serif;
+    font-family: "fontawesome-webfont", Helvetica, Arial, sans-serif;
     font-size: 30px;
 }
 .j-gallery .j-image {
@@ -2719,7 +2721,7 @@
     color: #F2F2F2;
 }
 .j-post-overlay.juicer-feed a.juicer-button:before {
-    font-family: "FontAwesome", Helvetica, Arial, sans-serif;
+    font-family: "fontawesome-webfont", Helvetica, Arial, sans-serif;
     font-size: 1rem;
     position: relative;
     left: -10px;
@@ -2747,7 +2749,7 @@
     text-align: center;
 }
 .j-post-overlay.juicer-feed ul.j-share a:before {
-    font-family: "FontAwesome", Helvetica, Arial, sans-serif;
+    font-family: "fontawesome-webfont", Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: white;
     position: relative;
@@ -2776,7 +2778,7 @@
     display: none;
 }
 .j-post-overlay.juicer-feed .j-navigate a.j-previous:before, .j-post-overlay.juicer-feed .j-navigate a.j-next:before {
-    font-family: "FontAwesome", Helvetica, Arial, sans-serif;
+    font-family: "fontawesome-webfont", Helvetica, Arial, sans-serif;
     font-size: 16px;
 }
 .j-post-overlay.juicer-feed .j-navigate a.j-previous {
@@ -3459,5 +3461,5 @@
     top: -1px !important;
 }
 .juicer-feed .j-social-icon:before {
-    font-family: 'FontAwesome'}
+    font-family: 'fontawesome-webfont'}
     
