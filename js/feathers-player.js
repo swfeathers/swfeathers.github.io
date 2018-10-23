@@ -1,4 +1,4 @@
-var elms = ['ipPlayBtn', 'spacesPlayBtn', 'ipDemoRadio', 'ipMasterRadio', 'spacesDemoRadio', 'spacesMasterRadio'];
+var elms = ['ipPlayBtn', 'spacesPlayBtn', 'ipDemoRadio', 'ipMasterRadio', 'spacesDemoRadio', 'spacesMasterRadio', 'ipProgressBar'];
 
 elms.forEach(function(elm) {
   window[elm] = document.getElementById(elm);
