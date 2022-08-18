@@ -2,3 +2,4 @@ User-Agent: *
 Disallow: /cortex/
 Disallow: /mixing-production-old.html
 Disallow: /index-old.html
+Disallow: /link-in-bio.html
