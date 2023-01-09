@@ -170,7 +170,7 @@
 						<p>Injured Party by Resolution feat. Liv Austen</h4>
 							<div class="btn-toolbar" role="toolbar">
 								<div class="btn-group-toggle mr-3" data-toggle="buttons">
-								  <label id="ipPlayBtn" class="btn btn-primary playBtn px-3">
+								  <label id="ipPlayBtn" class="btn btn-primary playBtn px-3" onclick="gtag('event', 'Audio_Play', {'event_label':'Injured Party'});">
 								    <input type="checkbox" autocomplete="off"><i class="fa fa-fw fa-play"></i>
 								  </label>
 								</div>
@@ -178,7 +178,7 @@
 								  <label id="ipDemoRadio" class="btn btn-primary switchBtn px-3 active">
 								    <input type="radio" name="ipRadios" autocomplete="off" checked>Demo
 								  </label>
-								  <label id="ipMasterRadio" class="btn btn-primary switchBtn px-3">
+								  <label id="ipMasterRadio" class="btn btn-primary switchBtn px-3" onclick="gtag('event', 'Audio_Play', {'event_label':'Spaces'});">
 								    <input type="radio" name="ipRadios" autocomplete="off">Master
 								  </label>
 								</div>
