@@ -89,8 +89,87 @@
 
 <body data-spy="scroll" data-target=".navbar">
 
-<div>
-<iframe src="https://samply.app/embed/4WTizW0gDbFw63tlSPq4" frameborder="0" allowtransparency="true" style="width: 100%; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.12)"></iframe>
+	<!-- Bootstrap 4.1.3 CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<!-- AmplitudeJS CSS (Optional: Include your custom styles here) -->
+<link rel="stylesheet" href="https://521dimensions.com/css/amplitude.css">
+
+<div id="amplitude-player" class="container py-4">
+  <div class="row">
+    <!-- Now Playing Info -->
+    <div class="col-md-4 text-center mb-3">
+      <img data-amplitude-song-info="cover_art_url" class="img-fluid rounded shadow" />
+      <div class="mt-3">
+        <h5 data-amplitude-song-info="name" class="font-weight-bold mb-1"></h5>
+        <p data-amplitude-song-info="artist" class="text-muted mb-0"></p>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="col-md-8 d-flex flex-column justify-content-center">
+      <div class="d-flex justify-content-center mb-3">
+        <button class="btn btn-outline-secondary mr-2" data-amplitude-play>
+          ▶️
+        </button>
+        <button class="btn btn-outline-secondary mr-2" data-amplitude-pause>
+          ⏸️
+        </button>
+        <button class="btn btn-outline-secondary mr-2" data-amplitude-prev>
+          ⏮️
+        </button>
+        <button class="btn btn-outline-secondary" data-amplitude-next>
+          ⏭️
+        </button>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="amplitude-progress bg-light rounded mb-3" style="height: 8px; overflow: hidden;">
+        <div class="amplitude-buffered-progress bg-secondary" style="height: 100%; width: 0%;"></div>
+        <div class="amplitude-played-progress bg-primary" style="height: 100%; width: 0%;"></div>
+      </div>
+
+      <!-- Time Display -->
+      <div class="d-flex justify-content-between text-muted text-small">
+        <span class="amplitude-current-time">0:00</span>
+        <span class="amplitude-duration-time">0:00</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- AmplitudeJS  -->
+<script src="https://cdn.jsdelivr.net/npm/amplitudejs@5.3.2/dist/amplitude.min.js"></script>
+
+<!-- Player Config -->
+<script>
+  Amplitude.init({
+    songs: [
+      {
+        name: "Risin' High (feat Raashan Ahmad)",
+        artist: "Ancient Astronauts",
+        album: "We Are to Answer",
+        url: "https://521dimensions.com/song/Risin-High.mp3",
+        cover_art_url: "https://521dimensions.com/img/open-source/amplitudejs/album-art/we-are-to-answer.jpg"
+      },
+      {
+        name: "The Gun",
+        artist: "Lorn",
+        album: "Ask The Dust",
+        url: "https://521dimensions.com/song/The-Gun.mp3",
+        cover_art_url: "https://521dimensions.com/img/open-source/amplitudejs/album-art/ask-the-dust.jpg"
+      },
+      {
+        name: "Anvil",
+        artist: "Lorn",
+        album: "Anvil",
+        url: "https://521dimensions.com/song/Anvil.mp3",
+        cover_art_url: "https://521dimensions.com/img/open-source/amplitudejs/album-art/anvil.jpg"
+      }
+    ]
+  });
+</script>
+
 
 	 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -103,6 +182,5 @@
 	<!-- <script> (function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script> -->
 
 	<script src="js/swfeathers-2017.js"></script>
-</div>
 </body>
 </html>
