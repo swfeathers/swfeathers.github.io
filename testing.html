@@ -88,88 +88,710 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
-
-	<!-- Bootstrap 4.1.3 CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-
-<!-- AmplitudeJS CSS (Optional: Include your custom styles here) -->
-<link rel="stylesheet" href="https://521dimensions.com/css/amplitude.css">
-
-<div id="amplitude-player" class="container py-4">
-  <div class="row">
-    <!-- Now Playing Info -->
-    <div class="col-md-4 text-center mb-3">
-      <img data-amplitude-song-info="cover_art_url" class="img-fluid rounded shadow" />
-      <div class="mt-3">
-        <h5 data-amplitude-song-info="name" class="font-weight-bold mb-1"></h5>
-        <p data-amplitude-song-info="artist" class="text-muted mb-0"></p>
-      </div>
-    </div>
-
-    <!-- Controls -->
-    <div class="col-md-8 d-flex flex-column justify-content-center">
-      <div class="d-flex justify-content-center mb-3">
-        <button class="btn btn-outline-secondary mr-2" data-amplitude-play>
-          ▶️
-        </button>
-        <button class="btn btn-outline-secondary mr-2" data-amplitude-pause>
-          ⏸️
-        </button>
-        <button class="btn btn-outline-secondary mr-2" data-amplitude-prev>
-          ⏮️
-        </button>
-        <button class="btn btn-outline-secondary" data-amplitude-next>
-          ⏭️
-        </button>
-      </div>
-
-      <!-- Progress Bar -->
-      <div class="amplitude-progress bg-light rounded mb-3" style="height: 8px; overflow: hidden;">
-        <div class="amplitude-buffered-progress bg-secondary" style="height: 100%; width: 0%;"></div>
-        <div class="amplitude-played-progress bg-primary" style="height: 100%; width: 0%;"></div>
-      </div>
-
-      <!-- Time Display -->
-      <div class="d-flex justify-content-between text-muted text-small">
-        <span class="amplitude-current-time">0:00</span>
-        <span class="amplitude-duration-time">0:00</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- AmplitudeJS  -->
-<script src="https://cdn.jsdelivr.net/npm/amplitudejs@5.3.2/dist/amplitude.min.js"></script>
-
-<!-- Player Config -->
-<script>
-  Amplitude.init({
-    songs: [
-      {
-        name: "Risin' High (feat Raashan Ahmad)",
-        artist: "Ancient Astronauts",
-        album: "We Are to Answer",
-        url: "https://swfeathers.co.uk/js/amplitude/1.mp3",
-        cover_art_url: "https://swfeathers.co.uk/img/why_am_i_so_single-original_london_cast_recording-album_cover.jpg"
-      },
-      {
-        name: "The Gun",
-        artist: "Lorn",
-        album: "Ask The Dust",
-        url: "https://swfeathers.co.uk/js/amplitude/2.mp3",
-        cover_art_url: "https://swfeathers.co.uk/img/hadley_fraser-just-let-go-album_cover.jpeg"
-      },
-      {
-        name: "Anvil",
-        artist: "Lorn",
-        album: "Anvil",
-        url: "https://swfeathers.co.uk/js/amplitude/3.mp3",
-        cover_art_url: "https://swfeathers.co.uk/img/babies_original_cast-without_saying_goodbye-single_cover.jpg"
-      }
-    ]
-  });
-</script>
-
+	<nav class="navbar fixed-top navbar-expand-md navbar-light text-uppercase">
+		<div class="container">
+			<a class="navbar-brand text-dark page-scroll" href="#top" onclick="gtag('event', 'Menu_Link', {'event_label':'Feathers'});">Feathers</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    		<span class="navbar-toggler-icon"></span>
+	  		</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link page-scroll" href="#about" onclick="gtag('event', 'Menu_Link', {'event_label':'About'});">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link page-scroll" href="#music" onclick="gtag('event', 'Menu_Link', {'event_label':'Music'});">Music</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link page-scroll" href="#discography" onclick="gtag('event', 'Menu_Link', {'event_label':'Discography'});">Discography</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="/mixing-production.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Services
+						</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item page-scroll" href="/mixing-production.html#mixing" onclick="gtag('event', 'Menu_Link', {'event_label':'Mixing'});">Mixing</a>
+								<a class="dropdown-item page-scroll" href="/mixing-production.html#production" onclick="gtag('event', 'Menu_Link', {'event_label':'Production'});">Production</a>
+								<a class="dropdown-item page-scroll" href="/mixing-production.html#recording" onclick="gtag('event', 'Menu_Link', {'event_label':'Recording'});">Recording</a>
+								<a class="dropdown-item page-scroll" href="/mixing-production.html#gear" onclick="gtag('event', 'Menu_Link', {'event_label':'Gear'});">Gear</a>
+								<a class="dropdown-item page-scroll" href="/musical-theatre.html" onclick="gtag('event', 'Menu_Link', {'event_label':'Musical Theatre'});">Musical Theatre</a>
+							</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link page-scroll" href="#contact" onclick="gtag('event', 'Menu_Link', {'event_label':'Contact'});">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<header id="top" class="header container-fluid d-flex align-items-center justify-content-center text-center">
+		<div>
+			<h1 class="display-1">Sam Featherstone</h1>
+			<h2 class="display-2 ">Music Producer / Mix&nbsp;Engineer</h2>
+			<img class="img-fluid mt-3 top-feather" src="img/feather-1.png" width="300" alt="Feathers">
+		</div>
+			<a href="#about" class="btn btn-primary btn-lg page-scroll" role="button" onclick="gtag('event', 'Menu_Link', {'event_label':'HeroScroll'});"> <i class="fa fa-angle-double-down fa-lg"></i>
+			</a>
+	</header>
+	<section id="about" class="py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<h2>About</h2>
+					<p class="lead mb-5">Sam, but some people call me Feathers.</p>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-sm-4 col-xl-3 pb-3 d-none d-md-block"> <img class="img-fluid img-thumbnail" src="img/sam_featherstone-audio_engineer-music_producer.jpg" alt="Sam Featherstone || Music Producer / Mix Engineer || 'Feathers'">
+				</div>
+					<div class="col-md-8 col-xl-7 text-justify">
+						<img class="img-thumbnail pull-left mr-3 d-md-none" src="img/sam_featherstone-audio_engineer-music_producer.jpg" alt="Sam Featherstone || Music Producer / Mix Engineer || 'Feathers'" style="width:40%">
+						<p>I'm based in South West London and I produce music. Rock and pop is my thing, but I get excited by all good music no matter the genre.</p>
+						<p>My life in music started through playing guitar in bands like <a href="https://open.spotify.com/album/0d6F1WH06twkBskHd57pZ3" target="_blank">Me and the Mountain</a> where I ended up recording, producing and mixing our own music.</p>
+						<p>I loved being in the studio crafting recordings so I gradually migrated over to that world. After managing a recording studio at in Battersea for a couple of years, I'm now back freelancing and have recently finished building a small project studio of my own that I'm calling <a href="/mixing-production#recording">'The Den'</a>.<span class="small ml-3"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> <em>click for pics</em></span></p>
+						<p>If you're a band, artist, writer or producer and are interested in working with me then <a href="#contact" class="page-scroll" onclick="gtag('event', 'Page_Link', {'event_label':'Contact'});">get in touch</a>, I'd love to hear from you.</p>
+						<ul class="list-unstyled list-inline text-center text-sm-left">
+							<li class="list-inline-item"> <a href="https://twitter.com/swfeathers" target="_blank")><i class="fa fa-twitter-square fa-lg"></i></a> </li>
+							<li class="list-inline-item"> <a href="https://www.facebook.com/swfeathers" target="_blank")><i class="fa fa-facebook-square fa-lg"></i></a> </li>
+							<li class="list-inline-item"> <a href="https://www.instagram.com/swfeathers/" target="_blank"><i class="fa fa-instagram fa-lg"></i></a> </li>
+							<li class="list-inline-item"> <a href="https://uk.linkedin.com/in/sam-featherstone-1484a575" target="_blank"><i class="fa fa-linkedin-square fa-lg"></i></a> </li>
+						</ul>
+					</div>
+			</div>
+			<div class="card-deck">
+				<div class="card">
+				      <h6 class="card-header">Classical No.1</h6>
+				    <div class="card-body">
+					<p class="card-text">At the beginning of 2018 I engineered, produced and mixed 'The Anniversary Album' for <a href="https://www.blakeofficial.com/" target="_blank">BLAKE</a> that went <strong>number one</strong> in the UK Classical Charts.</p>
+				   	<a href="https://www.officialcharts.com/charts/classical-artist-albums-chart/20180406/147/" class="font-italic card-link" target="_blank">Official Charts Company</a>
+					</div>
+				</div>
+				<div class="card">
+				      <h6 class="card-header">½ Billion Streams</h6>
+				    <div class="card-body">
+					<p class="card-text">Since it's release in 2019 tracks from 'SIX: The Musical (Studio Cast Recording)' that I engineered, produced and mixed have been <strong>streamed over 500 million times worldwide</strong> and is certified gold in the UK.</p>
+					<a href="https://www.bpi.co.uk/award/16446-3408-2" class="font-italic card-link" target="_blank">British Phonographic Industry</a>
+				    </div>
+				</div>
+				<div class="card">
+				      <h6 class="card-header">Grammy Nomination</h6>
+				    <div class="card-body">
+					<p class="card-text">'SIX: Live on Opening Night (Original Broadway Cast)' that I helped produced has been <strong>nominated for a Grammy Award</strong> for best musical theatre album.</p>
+				 	  <a href="https://www.grammy.com/news/2023-grammy-nominations-complete-winners-nominees-list" class="font-italic card-link" target="_blank">Recording Academy</a>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="covers" class="py-5">
+		<div class="container">
+			<h2 class="sr-only">Cover Art</h2>
+			<div class="row">
+				<div class="col-6 col-md-3">
+					<figure class="figure"> <img src="img/blake_dame_shirley_bassey-a_classic_christmas-album_cover.jpeg" alt="Blake" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">BLAKE &amp; Dame Shirley Bassey</figcaption>
+					</figure>
+				</div>
+				<div class="col-6 col-md-3">
+					<figure class="figure"> <img src="img/why_am_i_so_single-original_london_cast_recording-album_cover.jpg" alt="Why Am I So Single? (Original London Cast Recording)" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">Why Am I So Single?</figcaption>
+					</figure>
+				</div>
+				<div class="col-6 col-md-3 d-none">
+					<figure class="figure"> <img src="img/lucie_jones-believe-ep-album_cover.jpeg" alt="Lucie Jones EP" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">Lucie Jones</figcaption>
+					</figure>
+				</div>
+				<div class="col-6 col-md-3">
+					<figure class="figure"> <img src="img/west_end_cast-bonnie_clyde-album_cover.jpg" alt="Bonnie &amp; Clyde (West End Cast Recording)" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">Bonnie &amp; Clyde</figcaption>
+					</figure>
+				</div>
+				<div class="col-6 col-md-3">
+					<figure class="figure"> <img src="img/rozelle-i_was_too_late_ep-album_cover.jpg" alt="Rozelle" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">Rozelle</figcaption>
+					</figure>
+				</div>
+				<div class="col-6 col-md-3 position-relative">
+					<span class="m-1 font-italic font-weight-light badge badge-pill badge-warning position-absolute">Certified Gold</span>
+					<figure class="figure"> <img src="img/six-six-album_cover.jpg" alt="Six: The Musical (Studio Cast Recording)" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">SIX: The Musical</figcaption>
+					</figure>
+				</div>
+				<div class="col-6 col-md-3">
+					<figure class="figure"> <img src="img/charlie_simpson-little_hands-album_cover.jpeg" alt="Charlie Simpson" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">Charlie Simpson</figcaption>
+					</figure>
+				</div>
+				<div class="col-6 col-md-3">
+					<figure class="figure"> <img src="img/hadley_fraser-just-let-go-album_cover.jpeg" alt="Hadley Fraser" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">Hadley Fraser</figcaption>
+					</figure>
+				</div>
+				<div class="col-6 col-md-3 d-none">
+					<figure class="figure"> <img src="img/ben_stock-and_then_there_was_music-album_cover.jpeg" alt="Ben Stock" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">Ben Stock</figcaption>
+					</figure>
+				</div>
+				<div class="col-6 col-md-3 position-relative">
+					<span class="m-1 font-italic font-weight-light badge badge-pill badge-warning position-absolute">Classical No. 1</span>
+					<figure class="figure"> <img src="img/blake-the_anniversary_album-album_cover.jpg" alt="BLAKE" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">BLAKE</figcaption>
+					</figure>
+				</div>
+				<div class="col-6 col-md-3 d-none">
+					<figure class="figure"> <img src="img/camilla_kerslake_blake-you_raise_me_up-album_cover.jpeg" alt="Camilla Kerslake" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">Camilla Kerslake &amp; BLAKE</figcaption>
+					</figure>
+				</div>
+				<div class="col-6 col-md-3">
+					<figure class="figure"> <img src="img/me_and_the_mountain-ep-album_cover.jpeg" alt="Me and the Mountain" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">Me and the Mountain</figcaption>
+					</figure>
+				</div>
+				<div class="col-6 col-md-3 d-none">
+					<figure class="figure"> <img src="img/humphrey_berney-slumberland-album_cover.jpeg" alt="Slumberland" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">Humphrey Berney</figcaption>
+					</figure>
+				</div>
+				<div class="col-6 col-md-3">
+					<figure class="figure"> <img src="img/ed_larkin_jonny_amies-the_little_big_things-single_cover.jpg" alt="Slumberland" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">The Little Big Things</figcaption>
+					</figure>
+				</div>
+				<div class="col-6 col-md-3 d-none">
+					<figure class="figure"> <img src="img/lesley_ross-love_lies_lyrics-album_cover.jpg" alt="Lesley Ross" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">Lesley Ross</figcaption>
+					</figure>
+				</div>
+				<div class="col-6 col-md-3 d-none">
+					<figure class="figure"> <img src="img/rozelle-discovery-single_cover.jpg" alt="Rozelle" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">Rozelle</figcaption>
+					</figure>
+				</div>
+				<div class="col-6 col-md-3">
+					<figure class="figure"> <img src="img/babies_original_cast-without_saying_goodbye-single_cover.jpg" alt="Babies THe Musical" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">Babies The Musical</figcaption>
+					</figure>
+				</div>
+				<div class="col-6 col-md-3 d-none">
+					<figure class="figure"> <img src="img/john-victor-shoot_bang-album_cover.jpeg" alt="Shoot Bang" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">John-Victor</figcaption>
+					</figure>
+				</div>
+				<div class="col-6 col-md-3 poisition-relative">
+					<span class="m-1 font-italic font-weight-light badge badge-pill badge-warning position-absolute">Grammy Nominated</span>
+					<figure class="figure"> <img src="img/six_broadway_cast-live_on_opening_night-album_cover.jpg" alt="SIX Broadway Cast" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">SIX: Live on Opening Night</figcaption>
+					</figure>
+				</div>
+				<div class="col-6 col-md-3 d-none">
+					<figure class="figure"> <img src="img/richard_woodford-because_of_you-album_cover.jpg" alt="Richard Woodford" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">Richard Woodford</figcaption>
+					</figure>
+				</div>
+				<div class="col-6 col-md-3 d-none">
+					<figure class="figure"> <img src="img/me_and_the_mountain-ruthless_ep-album_cover.jpeg" alt="Me and the Mountain" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">Me and the Mountain</figcaption>
+					</figure>
+				</div>
+				<div class="col-6 col-md-3">
+					<figure class="figure"> <img src="img/resolution-round_two-album_cover.jpg" alt="Resolution" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">Resolution</figcaption>
+					</figure>
+				</div>
+				<div class="col-6 col-md-3">
+					<figure class="figure"> <img src="img/alicia_tyra-white_sheets-single_cover.jpg" alt="Alicia Tyra" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">Alicia Tyra</figcaption>
+					</figure>
+				</div>
+				<div class="col-6 col-md-3">
+					<figure class="figure"> <img src="img/42_balloons-studio_cast_recording-album_cover.jpg" alt="42 Balloons" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">42 Balloons</figcaption>
+					</figure>
+				</div>
+				<div class="col-6 col-md-3">
+					<figure class="figure"> <img src="img/svn-triggered-album_cover.jpg" alt="SVN" width="300" class="figure-img img-fluid cover">
+						<figcaption class="figure-caption text-center">SVN</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center">
+					<p class="mb-0"><small>Other artists I've worked with: James Arthur, Busted, Tonight Alive, Alexandra Burke, Lawson, Scouting For Girls, Geoff Sewell, Kerry Ellis, Michael Xavier, Hayden Oakley, Christoper Eccleston, Lucie Jones.</small></p>
+				</div>
+			</div>
+		</div>
+	</section>
+<!--<section id="carousel" class="py-5">
+	<div class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="col">
+					<img class="" src="img/carousel/carousel-1.jpg">
+						</div>
+				</div>
+				<div class="carousel-item">
+					<div class="col">
+					<img class="" src="img/carousel/carousel-2.jpg">
+						</div>
+				</div>
+				<div class="carousel-item">
+					<div class="col">
+					<img class="" src="img/carousel/carousel-3.jpg">
+						</div>
+				</div>
+				<div class="carousel-item">
+					<div class="col">
+					<img class="" src="img/carousel/carousel-4.jpg">
+						</div>
+				</div>
+				<div class="carousel-item">
+					<div class="col">
+					<img class="" src="img/carousel/carousel-5.jpg">
+						</div>
+				</div>
+				<div class="carousel-item">
+					<div class="col">
+					<img class="" src="img/carousel/carousel-6.jpg">
+						</div>
+				</div>
+				<div class="carousel-item">
+					<div class="col">
+					<img class="" src="img/carousel/carousel-7.jpg">
+					</div>
+				</div>
+		</div>
+	</div>
+	</section>-->
+	<section id="music" class="py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<h2 >Ear Candy</h2>
+					<p class="mb-4 lead">Some music that I've produced and/or mixed, have a listen.</p>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-8 mt-3">
+					<iframe src="https://samply.app/embed/4WTizW0gDbFw63tlSPq4" frameborder="0" allowtransparency="true" style="width: 100%; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.12)"></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="music2" class="py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<h2>Eye Candy</h2>
+					<p class="mb-3 lead">Some more music that I've produced, have a watch.</p>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-6 col-xl-5 mt-4">
+					<h4 class="mb-0">Charlie Simpson</h4>
+					<h5 class="text-muted">Long Road Home (Live Acoustic)</h5>
+					<p>Engineer and mixer.</p>
+					<div class="videoThumbWrapper">
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#videoModal" data-videoid="https://www.youtube.com/embed/mHr6vwnfQB0?rel=0&amp;showinfo=0&amp;autoplay=1&amp;enablejsapi=1" data-artist="Charlie Simpson" data-title="Long Road Home (Live Acoustic)" data-credit="Engineer and mixer." onclick="gtag('event', 'Video_Play', {'event_label':'Long Road Home'});"><i class="fa fa-play"></i></button>
+						<img class="img-fluid" src="img/charlie_simpson-long_road_home-vid_thumb.jpg" alt="Charlie Simpson - Long Road Home">
+					</div>
+				</div>
+				<div class="col-md-6 col-xl-5 mt-4">
+					<h4 class="mb-0">Rozelle</h4>
+					<h5 class="text-muted">Searching For A Revolution</h5>
+					<p>Additional production and mixer.</p>
+					<div class="videoThumbWrapper">
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#videoModal" data-videoid="https://www.youtube.com/embed/EPj4z0rvKW0?rel=0&amp;showinfo=0&amp;autoplay=1&amp;enablejsapi=1" data-artist="Rozelle" data-title="Searching For A Revolution" data-credit="Additional production and mixer." onclick="gtag('event', 'Video_Play', {'event_label':'Searching For A Revolution'});"><i class="fa fa-play"></i></button>
+						<img class="img-fluid" src="img/rozelle-searching_for_a_revolution-vid_thumb.jpg" alt="Rozelle - Searching For A Revolution">
+					</div>
+				</div>
+				<div class="col-md-6 col-xl-5 mt-4 d-none">
+					<h4 class="mb-0">Blake &amp; Dame Shirley Bassey</h4>
+					<h5 class="text-muted">The Christmas Song</h5>
+					<p>Engineer, co-producer and mixer.</p>
+					<div class="videoThumbWrapper">
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#videoModal" data-videoid="https://www.youtube.com/embed/opyJBNRlzag?rel=0&amp;showinfo=0&amp;autoplay=1&amp;enablejsapi=1" data-artist="Blake &amp; Dame Shirley Bassey" data-title="The Christmas Song" data-credit="Engineer, co-producer and mixer." onclick="gtag('event', 'Video_Play', {'event_label':'The Christmas Song'});"><i class="fa fa-play"></i></button>
+						<img class="img-fluid" src="img/blake-the_christmas_song-vid_thumb.jpg" alt="BLAKE &amp; Dame Shirley Bassey - The Christmas Song">
+					</div>
+				</div>
+				<div class="col-md-6 col-xl-5 mt-4">
+					<h4 class="mb-0">Me and the Mountain</h4>
+					<h5 class="text-muted">Switch</h5>
+					<p>Engineer, producer and mixer.</p>
+					<div class="videoThumbWrapper">
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#videoModal" data-videoid="https://www.youtube.com/embed/sPE4TGFGpCY?rel=0&amp;showinfo=0&amp;autoplay=1&amp;enablejsapi=1" data-artist="Me and the Mountain" data-title="Switch" data-credit="Engineer, producer and mixer." onclick="gtag('event', 'Video_Play', {'event_label':'Switch'});"><i class="fa fa-play"></i></button>
+						<img class="img-fluid" src="img/me_and_the_mountain-switch-vid_thumb.jpg" alt="Me and the Mountain - Switch">
+					</div>
+				</div>
+				<div class="col-md-6 col-xl-5 mt-4">
+					<h4 class="mb-0">Charlie Simpson &amp; San Bushmen</h4>
+					<h5 class="text-muted">Walking With The San</h5>
+					<p>Additional Engineer, additional production and mixer.</p>
+					<div class="videoThumbWrapper">
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#videoModal" data-videoid="https://www.youtube.com/embed/fym0SPfheGI?rel=0&amp;showinfo=0&amp;autoplay=1&amp;enablejsapi=1" data-artist="Charlie Simpson &amp; San Bushmen" data-title="Walking With The San" data-credit="Additional Engineer, additional production and mixer." onclick="gtag('event', 'Video_Play', {'event_label':'Walking With The San'});"><i class="fa fa-play"></i></button>
+						<img class="img-fluid" src="img/charlie_simpson-walking_with_the_san-vid_thumb.jpg" alt="Charlie Simpson &amp; San Bushmen - Walking With The San">
+					</div>
+				</div>
+				<div class="col-md-6 col-xl-5 mt-4">
+					<h4 class="mb-0">Kayleigh McKnight</h4>
+					<h5 class="text-muted">Loved Before<br><small class="text-dark">by Nick Butcher & Tom Ling</small></h5>
+					<p>Engineer, producer and mixer.</p>
+					<div class="videoThumbWrapper mt-auto">
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#videoModal" data-videoid="https://www.youtube.com/embed/K76RjYPCdgo?rel=0&amp;autoplay=1&amp;enablejsapi=1" data-artist="Kayleigh McKnight" data-title="Loved Before" data-credit="Engineer, producer and mixer." onclick="gtag('event', 'Video_Play', {'event_label':'Loved Before'});"><i class="fa fa-play"></i></button>
+						<img class="img-fluid w-100" src="img/mt/kayleigh_mcknight-loved_before-vid_thumb.jpg" alt="Kayleigh McKnight - Loved Before">
+					</div>
+				</div>
+				<div class="col-md-6 col-xl-5 mt-4">
+					<h4 class="mb-0">Hannah Lowther & Zach Loizou</h4>
+					<h5 class="text-muted">Dream I Never Dreamed<br><small class="text-dark">by Robbie Sherman</small></h5>
+					<p>Engineer, additional production and mixer.</p>
+					<div class="videoThumbWrapper mt-auto">
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#videoModal" data-videoid="https://www.youtube.com/embed/YSqjkpy1H70?rel=0&amp;autoplay=1&amp;enablejsapi=1" data-artist="Hannah Lowther, Zach Loizou and Here At Last" data-title="Dream I Never Dreamed" data-credit="Engineer, additional production and mixer." onclick="gtag('event', 'Video_Play', {'event_label':'Dream I Never Dreamed'});"><i class="fa fa-play"></i></button>
+						<img class="img-fluid w-100" src="img/mt/hannah_lowther_zach_loizou_here_at_last-dream_i_never_dreamed-vid_thumb.jpg" alt="Hannah Lowther, Zach Loizou and Here At Last - Dream I Never Dreamed">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="container-fluid px-0">
+							<div class="row">
+								<div class="col-10">
+									<h4 class="modal-artist">Video Artist</h4>
+									<h5 class="modal-title text-muted" id="videoModalLabel">Video Title</h5>
+									<p class="modal-credit mb-0">Music Credit</p>
+								</div>
+								<div class="col-2">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" width="1280" height="720" src="https://www.youtube.com/embed/mHr6vwnfQB0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="discography" class="py-5">
+		<div class="container">
+			<h2 class="text-center">Select Discography</h2>
+			<p class="text-center lead mb-5">Some of the music I've worked on over the years.</p>
+			<div class="table-responsive">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Year</th>
+							<th>Artist</th>
+							<th>Album</th>
+							<th>Credits</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>2025</td>
+							<td>Original London Cast</td>
+							<td>Why Am I So Single?</td>
+							<td>Engineer, Producer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2025</td>
+							<td>Hadley Fraser</td>
+							<td>Things That Come and Go</td>
+							<td>Mixer</td>
+						</tr>
+						<tr>
+							<td>2024</td>
+							<td>Studio Cast</td>
+							<td>42 Balloons [EP]</td>
+							<td>Engineer, Producer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2023</td>
+							<td>SVN</td>
+							<td>Triggered [Single]</td>
+							<td>Engineer, Producer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2023</td>
+							<td>Original West End Cast</td>
+							<td>Bonnie &amp; Clyde</td>
+							<td>Producer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2023</td>
+							<td>Original West End Cast</td>
+							<td>The Little Big Things</td>
+							<td>Vocal Engineer, Producer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2022</td>
+							<td>Hannah Lowther, Zach Loizou and Here At Last</td>
+							<td>Dream I Never Dreamed [Single]</td>
+							<td>Engineer, Additional Production, Mixer</td>
+						</tr>
+						<tr>
+							<td>2022</td>
+							<td>Natalie Paris and Oliver Ormson</td>
+							<td>Love Birds [Single]</td>
+							<td>Engineer, Additional Production, Mixer</td>
+						</tr>
+						<tr>
+							<td>2022</td>
+							<td>Workshop Cast</td>
+							<td>Babies The Musical [EP]</td>
+							<td>Engineer, Producer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2022</td>
+							<td>Original Broadway Cast</td>
+							<td>SIX: Live on Opening Night <span class="badge badge-primary" data-container="body" data-toggle="popover" data-placement="top" data-content="Grammy Nominated">&#x2605;</span></td>
+							<td>Producer</td>
+						</tr>
+						<tr>
+							<td>2022</td>
+							<td>Alicia Tyra</td>
+							<td>White Sheets [Single]</td>
+							<td>Mixer</td>
+						</tr>
+						<tr>
+							<td>2022</td>
+							<td>Toby Marlow</td>
+							<td>Better [Single]</td>
+							<td>Mixer</td>
+						</tr>
+						<tr>
+							<td>2021</td>
+							<td>Mosaic Voices</td>
+							<td>Letter To Kamilla</td>
+							<td>Engineer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2021</td>
+							<td>Studio Cast</td>
+							<td>Tokyo Rose (Original Cast Recording)</td>
+							<td>Engineer, Additional Production, Mixer</td>
+						</tr>
+						<tr>
+							<td>2021</td>
+							<td>Studio Cast</td>
+							<td>In The Willows: The Musical [EP]</td>
+							<td>Engineer, Additional Production, Mixer</td>
+						</tr>
+						<tr>
+							<td>2021</td>
+							<td>Rozelle</td>
+							<td>I Was Too Late [EP]</td>
+							<td>Additional Production, Mixer</td>
+						</tr>
+						<tr>
+							<td>2020</td>
+							<td>Rozelle</td>
+							<td>Discovery, Get Out Alive, Tell Me, Mystery, Searching For A Revolution [Singles]</td>
+							<td>Additional Production, Mixer</td>
+						</tr>
+						<tr>
+							<td>2019</td>
+							<td>Fair Oriana</td>
+							<td>Two Voices</td>
+							<td>Engineer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2019</td>
+							<td>BRAVO Amici</td>
+							<td>[TBC]</td>
+							<td>Engineer</td>
+						</tr>
+						<tr>
+							<td>2019</td>
+							<td>VOXX</td>
+							<td>Rise</td>
+							<td>Mixer</td>
+						</tr>
+						<tr>
+							<td>2018</td>
+							<td>BLAKE</td>
+							<td>The Anniversary Album <span class="badge badge-primary" data-container="body" data-toggle="popover" data-placement="top" data-content="No. 1 UK Classical Album Chart">&#x2605;</span></td>
+							<td>Engineer, Producer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2018</td>
+							<td>SIX</td>
+							<td>SIX: The Musical (Studio Cast Recording) <span class="badge badge-primary" data-container="body" data-toggle="popover" data-placement="top" data-content="500 Million Streams Worldwide and Certified Gold in the UK">&#x2605;</span></td>
+							<td>Engineer, Producer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2017</td>
+							<td>Liv Austen</td>
+							<td>Injured Party [Single]</td>
+							<td>Engineer, Producer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2017</td>
+							<td>Cassa Jackson</td>
+							<td>Spaces [Single]</td>
+							<td>Engineer, Producer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2017</td>
+							<td>Josh Gleaves</td>
+							<td>Stuck [EP]</td>
+							<td>Engineer, Producer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2016</td>
+							<td>Charlie Simpson</td>
+							<td>Little Hands (Select Tracks)</td>
+							<td>Engineer, Producer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2016</td>
+							<td>Lucie Jones</td>
+							<td>Silent Night [Single]</td>
+							<td>Engineer, Producer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2015</td>
+							<td>BLAKE feat. Dame Shirley Bassey</td>
+							<td>A Classic Christmas</td>
+							<td>Engineer, Producer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2015</td>
+							<td>Lucie Jones</td>
+							<td>Believe [EP]</td>
+							<td>Engineer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2015</td>
+							<td>Lesley Ross</td>
+							<td>Love, Lies &amp; Lyrics</td>
+							<td>Engineer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2015</td>
+							<td>Ben Stock</td>
+							<td>And There Was Music...</td>
+							<td>Engineer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2015</td>
+							<td>Richard Woodford</td>
+							<td>Because Of You</td>
+							<td>Engineer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2015</td>
+							<td>Humphrey Berney</td>
+							<td>Slumberland</td>
+							<td>Engineer, Producer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2014</td>
+							<td>Actions</td>
+							<td>Overrated [Single]</td>
+							<td>Engineer, Producer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2014</td>
+							<td>John Victor</td>
+							<td>Shoot...Bang!</td>
+							<td>Engineer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2014</td>
+							<td>Hadley Fraser</td>
+							<td>Just Let Go</td>
+							<td>Engineer, Producer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2013</td>
+							<td>Geoff Sewell</td>
+							<td>Live, Love, Sing!</td>
+							<td>Engineer</td>
+						</tr>
+						<tr>
+							<td>2013</td>
+							<td>Camilla Kerslake, BLAKE &amp; Sing to Beat Breast Cancer Choir</td>
+							<td>You Raise Me Up [Single]</td>
+							<td>Engineer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2013</td>
+							<td>Me and the Mountain</td>
+							<td>Me and the Mountain [EP]</td>
+							<td>Engineer, Producer, Mixer</td>
+						</tr>
+						<tr>
+							<td>2013</td>
+							<td>Lawson</td>
+							<td>Juliet [Single] <span class="badge badge-primary" data-container="body" data-toggle="popover" data-placement="top" data-content="No. 3 UK Single's Chart">&#x2605;</span></td>
+							<td>Additional Engineer</td>
+						</tr>
+						<tr>
+							<td>2012</td>
+							<td>Scouting For Girls</td>
+							<td>You Can't Ever Have Too Much Fun<br>
+								(Sleep Baby Sleep) [Single]</td>
+							<td>Additional Programming</td>
+						</tr>
+						<tr>
+							<td>2012</td>
+							<td>Alexandra Burke</td>
+							<td>Heatbreak on Hold (Acoustic) [Single]</td>
+							<td>Additional Engineer</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+	<section id="social">
+		<h2 class="sr-only">Social Media Feed</h2>
+		<ul class="juicer-feed" data-feed-id="swfeathers" data-origin="embed-code" data-per="15"></ul>
+		<!-- <div class="embedsocial-hashtag" data-ref="0eb0aa1251744d4e802f9cbc81e56b6cea2e9a75"> -->
+		</div>
+	</section>
+	<footer id="contact" class="footer container-fluid d-flex flex-column text-center justify-content-center align-items-center">
+		<div class="mt-5 mt-lg-0">
+			<h2 class="mt-5 mt-md-0">Contact</h2>
+			<ul class="list-unstyled list-inline">
+				<li class="list-inline-item"> <a href="https://twitter.com/swfeathers" target="_blank"><i class="fa fa-twitter-square fa-2x fa-fw"></i></a> </li>
+				<li class="list-inline-item"> <a href="https://www.facebook.com/swfeathers" target="_blank"><i class="fa fa-facebook-square fa-2x fa-fw"></i></a> </li>
+				<li class="list-inline-item"> <a href="https://www.instagram.com/swfeathers/" target="_blank"><i class="fa fa-instagram fa-2x fa-fw"></i></a> </li>
+				<li class="list-inline-item"> <a href="https://uk.linkedin.com/in/sam-featherstone-1484a575" target="_blank"><i class="fa fa-linkedin-square fa-2x fa-fw"></i></a> </li>
+			</ul>
+		</div>
+		<form role="form" class="jotform-form mw-100" style="width: 570px" action="https://submit.jotformeu.com/submit/60455144567357/" method="post" name="form_60455144567357" id="60455144567357" accept-charset="utf-8">
+			<input type="hidden" name="formID" value="60455144567357" />
+			<div class="form-group">
+				<label for="input_1" class="sr-only">Name</label>
+				<input type="text" class="form-control" data-type="input-textbox" id="input_1" name="q1_name" placeholder="Name">
+			</div>
+			<div class="form-group">
+				<label for="input_2" class="sr-only">Email</label>
+				<input type="email" class="form-control" id="input_2" name="q2_email" placeholder="E-Mail">
+			</div>
+			<div class="form-group">
+				<label for="input_5" class="sr-only">Message</label>
+				<input type="text" class="form-control" data-type="input-textbox" id="input_5" name="q5_message" placeholder="Message">
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary btn-block" name="submit" id="input_4" >Send</button>
+			</div>
+			<input type="hidden" id="simple_spc" name="simple_spc" value="60455144567357" />
+			<script type="text/javascript">
+			document.getElementById("si" + "mple" + "_spc").value = "60455144567357-60455144567357";
+			</script>
+		</form>
+		<img class="img-fluid bottom-feather mt-3 d-none d-lg-inline" src="img/feather-1.png" width="300" alt="Feathers">
+	</footer>
 
 	 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -182,5 +804,6 @@
 	<!-- <script> (function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script> -->
 
 	<script src="js/swfeathers-2017.js"></script>
+
 </body>
 </html>
