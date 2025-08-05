@@ -66,3 +66,7 @@
 	$(function () {
 	  $('[data-toggle="popover"]').popover()
 	});
+// Samply Playist Change
+    function changePlaylist(newSrc) {
+      document.getElementById("playlistFrame").src = newSrc;
+    }
