@@ -70,26 +70,39 @@ function loadSongs() {
 	  spacesMaster.volume(1.0);
 	});
 	
-	// Use ipDemo as the "timekeeper"
+var ipAnim;
+
 function updateIpProgress() {
   const seek = ipDemo.seek() || 0;
   const dur = ipDemo.duration() || 1;
   const pct = (seek / dur) * 100;
-  ipBar.style.width = pct + '%';
-  ipBar.setAttribute('aria-valuenow', pct.toFixed(1));
+
+  ipProgressBar.style.width = pct + '%';
+  ipProgressBar.setAttribute('aria-valuenow', pct.toFixed(1));
+
   if (ipDemo.playing()) {
     ipAnim = requestAnimationFrame(updateIpProgress);
   }
 }
 
-// Seek on click updates *both* so they stay in sync
-ipBar.parentNode.addEventListener('click', function(e) {
+// Kick off / stop progress updates when play/pause happens
+ipPlayBtn.addEventListener('click', function() {
+  if (!ipDemo.playing()) {
+    requestAnimationFrame(updateIpProgress);
+  } else {
+    cancelAnimationFrame(ipAnim);
+  }
+});
+
+// Allow seeking by clicking the bar
+ipProgressBar.parentNode.addEventListener('click', function(e) {
   const rect = this.getBoundingClientRect();
   const clickX = e.clientX - rect.left;
   const pct = clickX / rect.width;
   const newTime = ipDemo.duration() * pct;
+
   ipDemo.seek(newTime);
-  ipMaster.seek(newTime); // keep in lockstep
+  ipMaster.seek(newTime); // keep them in sync
   updateIpProgress();
 });
 
