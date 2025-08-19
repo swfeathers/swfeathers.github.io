@@ -79,6 +79,13 @@ function loadSongs() {
     }
   });
 
+  // Sync button visuals with actual playback
+  tracks.ip.demo.on('play', () => ipPlayBtn.classList.add('active'));
+  tracks.ip.demo.on('pause', () => ipPlayBtn.classList.remove('active'));
+  
+  tracks.spaces.demo.on('play', () => spacesPlayBtn.classList.add('active'));
+  tracks.spaces.demo.on('pause', () => spacesPlayBtn.classList.remove('active'));
+  
   // --- Demo/Master radio buttons ---
   ipDemoRadio.addEventListener('click', () => {
     tracks.ip.demo.volume(1.0);
