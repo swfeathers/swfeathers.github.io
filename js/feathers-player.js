@@ -18,13 +18,13 @@ function loadSongs() {
 	  volume: 0.0
 	});
 	var spacesDemo = new Howl({
-	  src: ['../sounds/spaces-demo.m4a', '../sounds/spaces-demo.mp3'],
+	  src: ['../sounds/spaces-demo.mp3'],
 	  preload: true,
 	  loop: true,
 	  volume: 1.0
 	});
 	var spacesMaster = new Howl({
-	  src: ['../sounds/spaces-master.m4a', '../sounds/spaces-master.mp3'],
+	  src: ['../sounds/spaces-master.mp3'],
 	  preload: true,
 	  loop: true,
 	  volume: 0.0
