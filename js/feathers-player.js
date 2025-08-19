@@ -85,13 +85,14 @@ function updateIpProgress() {
   }
 }
 
-// Kick off / stop progress updates when play/pause happens
-ipPlayBtn.addEventListener('click', function() {
-  if (!ipDemo.playing()) {
-    requestAnimationFrame(updateIpProgress);
-  } else {
-    cancelAnimationFrame(ipAnim);
-  }
+// Start the loop when the demo actually begins playing
+ipDemo.on('play', function() {
+  requestAnimationFrame(updateIpProgress);
+});
+
+// Stop the loop when paused
+ipDemo.on('pause', function() {
+  cancelAnimationFrame(ipAnim);
 });
 
 // Allow seeking by clicking the bar
