@@ -33,7 +33,7 @@ function loadSongs() {
         tracks[key].demo.pause();
         tracks[key].master.pause();
         cancelAnimationFrame(tracks[key].anim);
-        tracks[key].progressBar.style.width = '0%';
+        // tracks[key].progressBar.style.width = '0%';
       }
     }
   }
