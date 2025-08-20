@@ -1,1 +1,6 @@
 div#es-widget-header-container-template.es-widget-header-container-template {display:none!important;}
+
+.progress {
+-webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, .2) inset;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .2) inset;
+}
